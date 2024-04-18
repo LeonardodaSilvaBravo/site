@@ -1,0 +1,11 @@
+header{
+    height: 200px;
+    background-color: grey ;
+}
+header h1 {
+    color: red;
+}
+
+header li {
+    display: inline;
+}
