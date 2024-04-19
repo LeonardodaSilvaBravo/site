@@ -15,7 +15,7 @@
                 <nav id="menu">
                     <h1>Menu</h1>
                     <ul>
-                        <li><a href="../_html/index.html">Login</a></li>
+                        <li><a href="../_html/index.html">Home</a></li>
                         <li><a href="../_html/search.html">Buscar Casas</a></li>
                     </ul>
                 </nav>
