@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,26 @@
     <title>D'Oliveira Imóveis</title>
 </head>
 <body>
-    <header>
-        <h1>D' Oliveira Imóveis</h1>
-        <nav id="menuPrincipal">
-            <ul>
-                <li id="home"><a href="../_html/index.html">Home</a></li>
-                <li id="login"><a href="">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="interface">
+        <header id cabecalho>
+            <h1>D' Oliveira Imóveis</h1>
+            <img src="#" alt="Logo Imobiliaria D'Oliveira">
+                <nav id="menu">
+                    <h1>Menu</h1>
+                    <ul>
+                        <li><a href="../_html/index.php">Login</a></li>
+                        <li><a href="../_html/search.html">Buscar Casas</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <section>
+
+        </section>
+
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
