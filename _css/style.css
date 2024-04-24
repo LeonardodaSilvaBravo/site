@@ -1,6 +1,7 @@
 body{
     background-color: #830007;
 }
+
 div#interface{
     background-color: white;
 }
@@ -58,4 +59,22 @@ nav#menu li {
 
 nav#menu li:hover {
     background-color: #F90300;
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    
+}
+#social-links a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+footer {
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
 }
