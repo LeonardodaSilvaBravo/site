@@ -1,8 +1,16 @@
 body{
-    background-color: #dddddd;
+    background-color: #830007;
 }
 div#interface{
     background-color: white;
+}
+div#logotipo {
+    text-align: center;
+  }
+img#logo{
+    width: 150px;
+    height: 100px;
+    
 }
 nav h1{
     display: none;
@@ -11,7 +19,9 @@ header h1 {
     text-align: center;
 
 }
-
+h1 {
+    color: #F90300;
+}
 nav#menu {
     display: block;
     position: absolute;
@@ -24,13 +34,13 @@ nav#menu h1{
 }
 
 nav#menu a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color 0.2s;
 }
 
 nav#menu a:hover {
-    color: white;
+    color: black;
 }
 
 nav#menu ul {
@@ -40,12 +50,12 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block;
-    background-color: #dddddd;
+    background-color: #830007;
     padding: 10px;
     margin: 2px;
     transition: background-color 0.2s;
 }
 
 nav#menu li:hover {
-    background-color: darkgray;
+    background-color: #F90300;
 }
