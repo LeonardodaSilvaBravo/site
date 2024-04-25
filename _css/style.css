@@ -1,4 +1,5 @@
 body{
+    padding: 10px;
     background-color: #830007;
 }
 
@@ -23,10 +24,11 @@ header h1 {
 h1 {
     color: #F90300;
 }
+
 nav#menu {
     display: block;
     position: absolute;
-    top: -20px;
+    top: 0px;
     right: 0%;
 }
 
@@ -82,4 +84,7 @@ footer {
 a.link{
     text-decoration: none;
     color: black;
+}
+.d-block {
+    height: 700px;
 }
