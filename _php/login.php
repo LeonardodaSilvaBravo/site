@@ -15,7 +15,7 @@
                 <nav id="menu">
                     <h1>Menu</h1>
                     <ul>
-                        <li><a href="../_html/index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="../_html/contact.html">Contato</a></li>
                         <li><a href="../_html/search.html">Buscar Imóveis</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
