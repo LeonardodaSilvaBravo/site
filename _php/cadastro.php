@@ -17,36 +17,52 @@
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="../_php/login.php">Login</a></li>
-                        <li><a href="search.html">Buscar Imóveis</a></li>
-                        <li><a href="about_us.html">Quem Somos</a></li>
+                        <li><a href="../_html/contact.html">Contato</a></li>
+                        <li><a href="../_html/search.html">Buscar Imóveis</a></li>
+                        <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
                 </nav>
         </header>
 
-        <section>
-
-        </section>
         <footer>
+
+        <form action="cadastrar.php" method="POST">
+                <p>
+                    <label>Nome Completo</label>
+                    <input type="text" name="nome">
+                </p>
+                <p>
+                    <label>E-mail</label>
+                    <input type="text" name="email">
+                </p>
+                <p>
+                    <label>Senha</label>
+                    <input type="password" name="senha">
+                </p>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </form>
+
             <div id="social-links">
-                <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="https://www.instagram.com/doliveiraimoveis/" target="_blank">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-                <a href="https://youtube.com" target="_blank">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-                <a href="https://doliveiraimobiliaria@gmail.com" target="_blank">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </a>
-                <a href="https://www.tiktok.com/@doliveiraimoveis" target="_blank">
-                  <ion-icon name="logo-tiktok"></ion-icon>
-                </a>
-    
-            </div>
-    
+            <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/doliveiraimoveis/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://doliveiraimobiliaria@gmail.com" target="_blank">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@doliveiraimoveis" target="_blank">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+
+        </div>
+
         <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
     </footer>
 
