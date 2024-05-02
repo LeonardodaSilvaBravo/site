@@ -9,9 +9,21 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
         $email = $mysqli->real_escape_string($_POST['email']);
         $nome = $mysqli->real_escape_string($_POST['nome']);
         $senha = $mysqli->real_escape_string(password_hash($_POST['senha'], PASSWORD_DEFAULT));
+
+        $sql_code = "SELECT * FROM usuarios WHERE email = '$email'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
+        $usuario = $sql_query->fetch_assoc();
+
+        $quantidade = $sql_query->num_rows;
+
+        if($quantidade == 0) {
+
         $mysqli-> query("INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')");  
         echo("Cadastro efetuado com sucesso");
         header("Location: login.php");
+    } else {
+        echo "Falha ao cadastrar! E-mail já cadastrado";
+    }
 }
 }
 ?>
