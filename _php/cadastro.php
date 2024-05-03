@@ -28,7 +28,7 @@
 
         <form action="cadastrar.php" method="POST">
                 <p>
-                    <label>Nome Completo</label>
+                    <label>Nome</label>
                     <input type="text" name="nome">
                 </p>
                 <p>
