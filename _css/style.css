@@ -1,10 +1,16 @@
+:root{
+    --cor1: #830007;
+    --cor2: #F90300;
+    --cor3: #000000;
+    --cor4: #ffffff;
+}
 body{
     padding: 10px;
-    background-color: #830007;
+    background-color: var(--cor1);
 }
 
 div#interface{
-    background-color: white;
+    background-color: var(--cor4);
 }
 div#logotipo {
     text-align: center;
@@ -22,7 +28,7 @@ header h1 {
 
 }
 h1 {
-    color: #F90300;
+    color: var(--cor2);
 }
 
 nav#menu {
@@ -43,7 +49,7 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-    color: black;
+    color: var(--cor3);
 }
 
 nav#menu ul {
@@ -53,14 +59,14 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block;
-    background-color: #830007;
+    background-color: var(--cor1);
     padding: 10px;
     margin: 2px;
     transition: background-color 0.2s;
 }
 
 nav#menu li:hover {
-    background-color: #F90300;
+    background-color: var(--cor2);
 }
 
 #social-links {
@@ -72,7 +78,7 @@ nav#menu li:hover {
 #social-links a{
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--cor3);
 }
   
 footer {
@@ -83,7 +89,7 @@ footer {
 
 a.link{
     text-decoration: none;
-    color: black;
+    color: var(--cor3);
 }
 .d-block {
     height: 700px;
