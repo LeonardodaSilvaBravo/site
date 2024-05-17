@@ -63,7 +63,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="cadastro.php">Cadastrar</a></li>
-                        <li><a href="../_html/contact.html">Contato</a></li>
+                        <li><a href="contact.php">Contato</a></li>
                         <li><a href="../_html/search.html">Buscar Imóveis</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
