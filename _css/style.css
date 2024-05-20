@@ -23,6 +23,15 @@ body{
     background-color: var(--cor1);
 }
 
+header{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--cor4);
+    border-radius: 0px;
+    padding-top: 15px;
+}
+
 div#interface{
     background-color: var(--cor4);
 }
