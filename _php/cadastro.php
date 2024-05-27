@@ -38,9 +38,14 @@
                     <label>Senha</label>
                     <input type="password" name="senha">
                 </p>
+              <!--  <p>
+                    <label>Sexo:</label><br>
+                    <input type="radio" id="feminino" name="sexo">Feminino
+                    <input type="radio" id="masculino" name="sexo">Masculino
+                </p>
                 <p>
                     <button type="submit">Cadastrar</button>
-                </p>
+                </p>-->
             </form>
         </main>
 
