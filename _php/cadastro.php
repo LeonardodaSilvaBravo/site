@@ -24,9 +24,8 @@
                 </nav>
         </header>
 
-        <footer>
-
-        <form action="cadastrar.php" method="POST">
+        <main>
+            <form action="cadastrar.php" method="POST">
                 <p>
                     <label>Nome</label>
                     <input type="text" name="nome">
@@ -43,6 +42,9 @@
                     <button type="submit">Cadastrar</button>
                 </p>
             </form>
+        </main>
+
+        <footer>
 
             <div id="social-links">
             <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">

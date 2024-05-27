@@ -70,9 +70,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                 </nav>
         </header>
 
-        <footer>
-
-        <form action="" method="POST">
+        <main>
+            <form action="" method="POST">
                 <p>
                     <label>E-mail</label>
                     <input type="text" name="email">
@@ -85,6 +84,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <button type="submit">Entrar</button>
                 </p>
             </form>
+        </main>
+
+        <footer>
 
             <div id="social-links">
             <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
