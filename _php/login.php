@@ -58,7 +58,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <div id="interface">
         <header id = "cabecalho">
             <div id="logotipo"><img src="../_imagens/logotipo-doliveira (3).png" alt="Logo Imobiliaria D'Oliveira" id="logo"></div>
-            <h1>D' Oliveira Imóveis</h1>
+            <br>
                 <nav id="menu">
                     <h1>Menu</h1>
                     <ul>
