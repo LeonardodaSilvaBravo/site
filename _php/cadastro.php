@@ -44,9 +44,10 @@
                     <input type="radio" id="feminino" name="sexo">Feminino
                     <input type="radio" id="masculino" name="sexo">Masculino
                 </p>
+                 </p>-->
                 <p>
                     <button type="submit">Cadastrar</button>
-                </p>-->
+               
             </form>
         </main>
 
