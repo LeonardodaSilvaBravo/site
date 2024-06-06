@@ -39,9 +39,6 @@
                 <a href="https://www.youtube.com/@DOliveiraImoveisPeruibe" target="_blank">
                   <ion-icon name="logo-youtube"></ion-icon>
                 </a>
-                <a href="https://doliveiraimobiliaria@gmail.com" target="_blank">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </a>
                 <a href="https://www.tiktok.com/@doliveiraimoveis" target="_blank">
                   <ion-icon name="logo-tiktok"></ion-icon>
                 </a>

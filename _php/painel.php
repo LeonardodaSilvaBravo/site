@@ -29,7 +29,7 @@
                 </nav>
         </header>
 
-        Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.
+        <p>Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.</p>
 
         <footer>
         <div id="social-links">
