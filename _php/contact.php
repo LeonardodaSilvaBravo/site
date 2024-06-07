@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,9 +28,31 @@
                 </nav>
         </header>
 
-        <section>
+        <main>
 
-        </section>
+          <div class="cont">
+            <h2>Fale Conosco</h2>
+
+            <form action="#">
+
+              <input type="text" name="nome" placeholder="Digite seu nome completo" id="">
+              <br>
+
+              <input type="email" name="email" placeholder="Digite seu e-mail" id="">
+              <br>
+
+              <input type="tel" name="telefone" placeholder="Digite seu Whatsapp" id="">
+              <br>
+
+              <textarea name="comentario" placeholder="Digite seu comentário/dúvida" id="" cols="23" rows="7"></textarea>
+              <br>
+
+              <input type="submit" name="enviar" value="Enviar">
+              
+            </form>
+          </div>
+        </main>
+
         <footer>
             <div id="social-links">
                 <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
