@@ -181,3 +181,12 @@ span{
 .conteudo{
     animation: modal 3s;
 }
+
+.fechar a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+.fechar a:hover {
+    color: var(--cor3);
+}

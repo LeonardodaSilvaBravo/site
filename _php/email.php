@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../_imagens/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="../_css/style.css"/>
-    <script src="../_javascript/functions.js"></script>
     <title>D'Oliveira Imóveis</title>
 </head>
 <body>
@@ -21,10 +20,11 @@
 
         <p>Entraremos em <span>contato</span> em breve</p>
 
-        <button onclick="sair()" class="fechar">FECHAR</button>
+        <button class="fechar"><a href="../index.html">FECHAR</a></button>
 
         </div>
 
     </div>
+    <script src="../_javascript/functions.js"></script>
 </body>
 </html>
