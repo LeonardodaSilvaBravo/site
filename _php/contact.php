@@ -33,7 +33,7 @@
           <div class="cont">
             <h2>Fale Conosco</h2>
 
-            <form action="#">
+            <form action="email.php" method="post">
 
               <input type="text" name="nome" placeholder="Digite seu nome completo" id="">
               <br>

@@ -73,7 +73,7 @@ nav#menu h1{
 }
 
 nav#menu a {
-    color: white;
+    color: var(--cor4);
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -124,3 +124,40 @@ a.link{
 .d-block {
     height: 700px;
 }
+
+div.conteudo{
+    background-color: var(--cor4);
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+}
+
+.modal{
+    padding: 2%;
+}
+
+.modal h2{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+span{
+    font-weight: bold;
+}
+
+.fechar{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 10px;
+}
+
+.fechar:hover{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-weight: bold;
+} 
