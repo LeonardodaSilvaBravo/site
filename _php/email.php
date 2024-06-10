@@ -1,3 +1,21 @@
+<?php
+
+if(!empty($_POST['enviar'])){
+    $to = "suporte@doliveiraimobiliaria.com.br";
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $comentario = $_POST['comentario'];
+    $assunto = "Mensagem do Site";
+
+    $mailHeaders = "Nome : " . $nome . " \r \n Email: " . $email . "\r \n Telefone: " . $telefone . " \r \n Comentario: " . $comentario . "\r \n ";
+
+    if(mail($to, $nome, $mailHeaders)){
+        header("Location: email.php");
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

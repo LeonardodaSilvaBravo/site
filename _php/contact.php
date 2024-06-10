@@ -35,19 +35,19 @@
 
             <form action="email.php" method="post">
 
-              <input type="text" name="nome" placeholder="Digite seu nome completo" id="">
+              <input type="text" name="nome" placeholder="Digite seu nome completo">
               <br>
 
-              <input type="email" name="email" placeholder="Digite seu e-mail" id="">
+              <input type="email" name="email" placeholder="Digite seu e-mail">
               <br>
 
-              <input type="tel" name="telefone" placeholder="Digite seu Whatsapp" id="">
+              <input type="tel" name="telefone" placeholder="Digite seu Whatsapp">
               <br>
 
-              <textarea name="comentario" placeholder="Digite seu comentário/dúvida" id="" cols="23" rows="7"></textarea>
+              <textarea name="comentario" placeholder="Digite seu comentário/dúvida" id="comentario" cols="23" rows="7"></textarea>
               <br>
 
-              <input type="submit" name="enviar" value="Enviar">
+              <input type="submit" name="enviar" value="Enviar" id="enviar">
               
             </form>
           </div>
