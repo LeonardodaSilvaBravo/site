@@ -12,7 +12,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email'";
+        $sql_code = "SELECT * FROM administradores WHERE email = '$email'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
         $usuario = $sql_query->fetch_assoc();
 
@@ -30,7 +30,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['ID'] = $usuario['ID'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location: painel.php");
+            header("Location: painel_admin.php");
 
         } else {
             echo "Falha ao logar! E-mail ou senha incorretos";
@@ -63,8 +63,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="cadastro.php">Cadastrar</a></li>
-                        <li><a href="admin.php">Administração</a></li>
+                        <li><a href="login.php">Login</a></li>
                         <li><a href="contact.php">Contato</a></li>
                         <li><a href="../_html/search.html">Buscar Imóveis</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
