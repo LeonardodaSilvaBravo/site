@@ -28,16 +28,16 @@
         <main>
             <form action="cadastrar_imoveis.php" method="POST">
                 <p>
-                    <label>Nome</label>
-                    <input type="text" name="nome">
+                    <label></label>
+                    <input type="text" name="">
                 </p>
                 <p>
-                    <label>E-mail</label>
-                    <input type="text" name="email">
+                    <label></label>
+                    <input type="text" name="">
                 </p>
                 <p>
-                    <label>Senha</label>
-                    <input type="password" name="senha">
+                    <label>Foto1</label>
+                    <input type="file" name="foto1">
                 </p>
               <!--  <p>
                     <label>Sexo:</label><br>
