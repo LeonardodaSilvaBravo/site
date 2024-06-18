@@ -26,25 +26,95 @@
         </header>
 
         <main>
-            <form action="cadastrar_imoveis.php" method="POST">
+            <form enctype="multipart/form-date" action="cadastrar_imoveis.php" method="POST">
                 <p>
-                    <label></label>
-                    <input type="text" name="">
+                    <label>Endereço</label>
+                    <input type="text" name="endereco">
                 </p>
                 <p>
-                    <label></label>
-                    <input type="text" name="">
+                    <label>Referência</label>
+                    <input type="text" name="ref">
                 </p>
                 <p>
                     <label>Foto1</label>
                     <input type="file" name="foto1">
                 </p>
-              <!--  <p>
-                    <label>Sexo:</label><br>
-                    <input type="radio" id="feminino" name="sexo">Feminino
-                    <input type="radio" id="masculino" name="sexo">Masculino
+                <p>
+                    <label>Foto2</label>
+                    <input type="file" name="foto2">
                 </p>
-                 </p>-->
+                <p>
+                    <label>Foto3</label>
+                    <input type="file" name="foto3">
+                </p>
+                <p>
+                    <label>Foto4</label>
+                    <input type="file" name="foto4">
+                </p>
+                <p>
+                    <label>Foto5</label>
+                    <input type="file" name="foto5">
+                </p>
+                <p>
+                    <label>Foto6</label>
+                    <input type="file" name="foto6">
+                </p>
+                <p>
+                    <label>Foto7</label>
+                    <input type="file" name="foto7">
+                </p>
+                <p>
+                    <label>Foto8</label>
+                    <input type="file" name="foto8">
+                </p>
+                <p>
+                    <label>Foto9</label>
+                    <input type="file" name="foto9">
+                </p>
+                <p>
+                    <label>Foto10</label>
+                    <input type="file" name="foto10">
+                </p>
+                <p>
+                    <label>Foto11</label>
+                    <input type="file" name="foto11">
+                </p>
+                <p>
+                    <label>Foto12</label>
+                    <input type="file" name="foto12">
+                </p>
+                <p>
+                    <label>Foto13</label>
+                    <input type="file" name="foto13">
+                </p>
+                <p>
+                    <label>Foto14</label>
+                    <input type="file" name="foto14">
+                </p>
+                <p>
+                    <label>Foto15</label>
+                    <input type="file" name="foto15">
+                </p>
+                <p>
+                    <label>Foto16</label>
+                    <input type="file" name="foto16">
+                </p>
+                <p>
+                    <label>Foto17</label>
+                    <input type="file" name="foto17">
+                </p>
+                <p>
+                    <label>foto18</label>
+                    <input type="file" name="foto18">
+                </p>
+                <p>
+                    <label>Foto19</label>
+                    <input type="file" name="foto19">
+                </p>
+                <p>
+                    <label>Foto20</label>
+                    <input type="file" name="foto20">
+                </p>
                 <p>
                     <button type="submit">Cadastrar</button>
                
