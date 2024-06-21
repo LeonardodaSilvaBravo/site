@@ -18,9 +18,7 @@
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="contact.php">Contato</a></li>
-                        <li><a href="../_html/search.html">Buscar Imóveis</a></li>
-                        <li><a href="../_html/about_us.html">Quem Somos</a></li>
+                        <li><a href="painel_admin.php">Voltar ao Painel</a></li>
                     </ul>
                 </nav>
         </header>
@@ -56,11 +54,6 @@
                     <input type="text" name="banheiros">
                 </p>
                 <p>
-                    <label>Tem Piscina</label>
-                    <input type="radio" name="piscina" value="sim" id="sim">Sim
-                    <input type="radio" name="piscina" value="nao" id="nao">Não
-                </p>
-                <p>
                     <label>Bairro</label>
                     <input type="text" name="bairo">
                 </p>
@@ -69,212 +62,217 @@
                     <input type="text" name="preco">
                 </p>
                 <p>
-                    <label>Venda ou Locação</label>
-                    <input type="radio" name="venda_ou_loc" value="venda" id="venda">Venda
-                    <input type="radio" name="venda_ou_loc" value="locacao" id="venda">Locação
-                </p>
-                <p>
                     <label>Oportunidade</label>
                     <input type="text" name="oportunidade">
                 </p>
                 <p>
-                    <label>Foto1</label>
+                    <label>Venda ou Locação</label> <br>
+                    <input type="radio" name="venda_ou_loc" value="venda" id="venda">Venda <br>
+                    <input type="radio" name="venda_ou_loc" value="locacao" id="venda">Locação <br>
+                </p>
+                <p>
+                    <label>Tem Piscina</label> <br>
+                    <input type="radio" name="piscina" value="sim" id="sim">Sim <br>
+                    <input type="radio" name="piscina" value="nao" id="nao">Não <br>
+                </p>
+                <p>
+                    <label>Foto 1</label>
                     <input type="file" name="foto1">
                 </p>
                 <p>
-                    <label>Foto2</label>
+                    <label>Foto 2</label>
                     <input type="file" name="foto2">
                 </p>
                 <p>
-                    <label>Foto3</label>
+                    <label>Foto 3</label>
                     <input type="file" name="foto3">
                 </p>
                 <p>
-                    <label>Foto4</label>
+                    <label>Foto 4</label>
                     <input type="file" name="foto4">
                 </p>
                 <p>
-                    <label>Foto5</label>
+                    <label>Foto 5</label>
                     <input type="file" name="foto5">
                 </p>
                 <p>
-                    <label>Foto6</label>
+                    <label>Foto 6</label>
                     <input type="file" name="foto6">
                 </p>
                 <p>
-                    <label>Foto7</label>
+                    <label>Foto 7</label>
                     <input type="file" name="foto7">
                 </p>
                 <p>
-                    <label>Foto8</label>
+                    <label>Foto 8</label>
                     <input type="file" name="foto8">
                 </p>
                 <p>
-                    <label>Foto9</label>
+                    <label>Foto 9</label>
                     <input type="file" name="foto9">
                 </p>
                 <p>
-                    <label>Foto10</label>
+                    <label>Foto 10</label>
                     <input type="file" name="foto10">
                 </p>
                 <p>
-                    <label>Foto11</label>
+                    <label>Foto 11</label>
                     <input type="file" name="foto11">
                 </p>
                 <p>
-                    <label>Foto12</label>
+                    <label>Foto 12</label>
                     <input type="file" name="foto12">
                 </p>
                 <p>
-                    <label>Foto13</label>
+                    <label>Foto 13</label>
                     <input type="file" name="foto13">
                 </p>
                 <p>
-                    <label>Foto14</label>
+                    <label>Foto 14</label>
                     <input type="file" name="foto14">
                 </p>
                 <p>
-                    <label>Foto15</label>
+                    <label>Foto 15</label>
                     <input type="file" name="foto15">
                 </p>
                 <p>
-                    <label>Foto16</label>
+                    <label>Foto 16</label>
                     <input type="file" name="foto16">
                 </p>
                 <p>
-                    <label>Foto17</label>
+                    <label>Foto 17</label>
                     <input type="file" name="foto17">
                 </p>
                 <p>
-                    <label>foto18</label>
+                    <label>foto 18</label>
                     <input type="file" name="foto18">
                 </p>
                 <p>
-                    <label>Foto19</label>
+                    <label>Foto 19</label>
                     <input type="file" name="foto19">
                 </p>
                 <p>
-                    <label>Foto20</label>
+                    <label>Foto 20</label>
                     <input type="file" name="foto20">
                 </p>
                 <p>
-                    <label>Foto21</label>
+                    <label>Foto 21</label>
                     <input type="file" name="foto21">
                 </p>
                 <p>
-                    <label>Foto22</label>
+                    <label>Foto 22</label>
                     <input type="file" name="foto22">
                 </p>
                 <p>
-                    <label>Foto23</label>
+                    <label>Foto 23</label>
                     <input type="file" name="foto23">
                 </p>
                 <p>
-                    <label>Foto24</label>
+                    <label>Foto 24</label>
                     <input type="file" name="foto24">
                 </p>
                 <p>
-                    <label>Foto25</label>
+                    <label>Foto 25</label>
                     <input type="file" name="foto25">
                 </p>
                 <p>
-                    <label>Foto26</label>
+                    <label>Foto 26</label>
                     <input type="file" name="foto26">
                 </p>
                 <p>
-                    <label>Foto27</label>
+                    <label>Foto 27</label>
                     <input type="file" name="foto27">
                 </p>
                 <p>
-                    <label>Foto28</label>
+                    <label>Foto 28</label>
                     <input type="file" name="foto28">
                 </p>
                 <p>
-                    <label>Foto29</label>
+                    <label>Foto 29</label>
                     <input type="file" name="foto29">
                 </p>
                 <p>
-                    <label>Foto30</label>
+                    <label>Foto 30</label>
                     <input type="file" name="foto30">
                 </p>
                 <p>
-                    <label>Foto31</label>
+                    <label>Foto 31</label>
                     <input type="file" name="foto31">
                 </p>
                 <p>
-                    <label>Foto32</label>
+                    <label>Foto 32</label>
                     <input type="file" name="foto32">
                 </p>
                 <p>
-                    <label>Foto33</label>
+                    <label>Foto 33</label>
                     <input type="file" name="foto33">
                 </p>
                 <p>
-                    <label>Foto34</label>
+                    <label>Foto 34</label>
                     <input type="file" name="foto34">
                 </p>
                 <p>
-                    <label>Foto35</label>
+                    <label>Foto 35</label>
                     <input type="file" name="foto35">
                 </p>
                 <p>
-                    <label>Foto36</label>
+                    <label>Foto 36</label>
                     <input type="file" name="foto36">
                 </p>
                 <p>
-                    <label>Foto37</label>
+                    <label>Foto 37</label>
                     <input type="file" name="foto37">
                 </p>
                 <p>
-                    <label>Foto38</label>
+                    <label>Foto 38</label>
                     <input type="file" name="foto38">
                 </p>
                 <p>
-                    <label>Foto39</label>
+                    <label>Foto 39</label>
                     <input type="file" name="foto39">
                 </p>
                 <p>
-                    <label>Foto40</label>
+                    <label>Foto 40</label>
                     <input type="file" name="foto40">
                 </p>
                 <p>
-                    <label>Foto41</label>
+                    <label>Foto 41</label>
                     <input type="file" name="foto41">
                 </p>
                 <p>
-                    <label>Foto42</label>
+                    <label>Foto 42</label>
                     <input type="file" name="foto42">
                 </p>
                 <p>
-                    <label>Foto43</label>
+                    <label>Foto 43</label>
                     <input type="file" name="foto43">
                 </p>
                 <p>
-                    <label>Foto44</label>
+                    <label>Foto 44</label>
                     <input type="file" name="foto44">
                 </p>
                 <p>
-                    <label>Foto45</label>
+                    <label>Foto 45</label>
                     <input type="file" name="foto45">
                 </p>
                 <p>
-                    <label>Foto46</label>
+                    <label>Foto 46</label>
                     <input type="file" name="foto46">
                 </p>
                 <p>
-                    <label>Foto47</label>
+                    <label>Foto 47</label>
                     <input type="file" name="foto47">
                 </p>
                 <p>
-                    <label>Foto48</label>
+                    <label>Foto 48</label>
                     <input type="file" name="foto48">
                 </p>
                 <p>
-                    <label>Foto49</label>
+                    <label>Foto 49</label>
                     <input type="file" name="foto49">
                 </p>
                 <p>
-                    <label>Foto50</label>
+                    <label>Foto 50</label>
                     <input type="file" name="foto50">
                 </p>
                 <p>
