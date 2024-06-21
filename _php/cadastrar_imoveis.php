@@ -8,6 +8,16 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
     } else {
         $endereco = $mysqli->real_escape_string($_POST['endereco']);
         $ref = $mysqli->real_escape_string($_POST['ref']);
+        $areaTer = $mysqli->real_escape_string($_POST['areaTer']);
+        $areaCon = $mysqli->real_escape_string($_POST['AC']);
+        $quartos = $mysqli->real_escape_string($_POST['quartos']);
+        $suites = $mysqli->real_escape_string($_POST['suites']);
+        $banheiros = $mysqli->real_escape_string($_POST['banheiros']);
+        $bairo = $mysqli->real_escape_string($_POST['bairo']);
+        $preco = $mysqli->real_escape_string($_POST['preco']);
+        $oportunidade = $mysqli->real_escape_string($_POST['oportunidade']);
+        $piscina = $mysqli->real_escape_string($_POST['piscina']);
+        $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
         $foto2 = $_FILES['foto2'];
         $foto3 = $_FILES['foto3'];
@@ -28,10 +38,40 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $foto18 = $_FILES['foto18'];
         $foto19 = $_FILES['foto19'];
         $foto20 = $_FILES['foto20'];
+        $foto21 = $_FILES['foto21'];
+        $foto22 = $_FILES['foto22'];
+        $foto23 = $_FILES['foto23'];
+        $foto24 = $_FILES['foto24'];
+        $foto25 = $_FILES['foto25'];
+        $foto26 = $_FILES['foto26'];
+        $foto27 = $_FILES['foto27'];
+        $foto28 = $_FILES['foto28'];
+        $foto29 = $_FILES['foto29'];
+        $foto30 = $_FILES['foto30'];
+        $foto31 = $_FILES['foto31'];
+        $foto32 = $_FILES['foto32'];
+        $foto33 = $_FILES['foto33'];
+        $foto34 = $_FILES['foto34'];
+        $foto35 = $_FILES['foto35'];
+        $foto36 = $_FILES['foto36'];
+        $foto37 = $_FILES['foto37'];
+        $foto38 = $_FILES['foto38'];
+        $foto39 = $_FILES['foto39'];
+        $foto40 = $_FILES['foto40'];
+        $foto41 = $_FILES['foto41'];
+        $foto42 = $_FILES['foto42'];
+        $foto43 = $_FILES['foto43'];
+        $foto44 = $_FILES['foto44'];
+        $foto45 = $_FILES['foto45'];
+        $foto46 = $_FILES['foto46'];
+        $foto47 = $_FILES['foto47'];
+        $foto48 = $_FILES['foto48'];
+        $foto49 = $_FILES['foto49'];
+        $foto50 = $_FILES['foto50'];
 
         $pasta = "_imoveis/";
 
-        
+
 
         $sql_code = "SELECT * FROM imoveis WHERE endereco = '$endereco'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
