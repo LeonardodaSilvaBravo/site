@@ -24,7 +24,7 @@
         </header>
 
         <main>
-            <form enctype="multipart/form-date" action="cadastrar_imoveis.php" method="POST">
+            <form enctype="multipart/form-data" action="cadastrar_imoveis.php" method="POST">
                 <p>
                     <label>Endereço</label>
                     <input type="text" name="endereco">
@@ -79,6 +79,7 @@
                     <label>Foto 1</label>
                     <input type="file" name="foto1">
                 </p>
+                <!--  
                 <p>
                     <label>Foto 2</label>
                     <input type="file" name="foto2">
@@ -275,9 +276,10 @@
                     <label>Foto 50</label>
                     <input type="file" name="foto50">
                 </p>
+                -->
                 <p>
                     <button type="submit">Cadastrar</button>
-               
+                </p>
             </form>
         </main>
 

@@ -19,6 +19,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $piscina = $mysqli->real_escape_string($_POST['piscina']);
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
+       /*
         $foto2 = $_FILES['foto2'];
         $foto3 = $_FILES['foto3'];
         $foto4 = $_FILES['foto4'];
@@ -68,8 +69,17 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $foto48 = $_FILES['foto48'];
         $foto49 = $_FILES['foto49'];
         $foto50 = $_FILES['foto50'];
+        */
 
         $pasta = "_imoveis/";
+
+        $foto1Nome = $foto1['name'];
+        $novonome1 = uniqid();
+
+        $extensao1 = strtolower(PATHINFO($foto1Nome, PATHINFO_EXTENSION));
+        $path1 = $pasta . $novonome1 . "." . $extensao1;
+
+        $enviar1 = move_uploaded_file($foto1['tmp_name'], $path1);
 
 
 
@@ -81,11 +91,11 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         if($quantidade == 0) {
 
-        $mysqli-> query("INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')");  
+        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, venda_loc, piscina, foto1, nome_foto1) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$venda_ou_loc', '$piscina', '$novonome1', '$path1')");  
         echo("Cadastro efetuado com sucesso");
-        header("Location: login.php");
+        header("Location: painel_admin.php");
     } else {
-        echo "Falha ao cadastrar! E-mail já cadastrado";
+        echo "Falha ao cadastrar! Casa já cadastrado";
     }
 }
 }
