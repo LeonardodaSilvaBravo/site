@@ -19,7 +19,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $piscina = $mysqli->real_escape_string($_POST['piscina']);
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
-        /*
+        /* 
         $foto2 = $_FILES['foto2'];
         $foto3 = $_FILES['foto3'];
         $foto4 = $_FILES['foto4'];
