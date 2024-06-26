@@ -79,11 +79,12 @@
                     <label>Foto 1</label>
                     <input type="file" name="foto1">
                 </p>
-                <!--  
+                
                 <p>
                     <label>Foto 2</label>
                     <input type="file" name="foto2">
                 </p>
+                <!--  
                 <p>
                     <label>Foto 3</label>
                     <input type="file" name="foto3">

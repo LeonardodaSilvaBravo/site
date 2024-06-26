@@ -19,8 +19,8 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $piscina = $mysqli->real_escape_string($_POST['piscina']);
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
-        /* 
         $foto2 = $_FILES['foto2'];
+        /*
         $foto3 = $_FILES['foto3'];
         $foto4 = $_FILES['foto4'];
         $foto5 = $_FILES['foto5'];
@@ -81,6 +81,14 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         $enviar1 = move_uploaded_file($foto1['tmp_name'], $path1);
 
+        $foto2Nome = $foto2['name'];
+        $novonome2 = uniqid();
+
+        $extensao2 = strtolower(PATHINFO($foto2Nome, PATHINFO_EXTENSION));
+        $path2 = $pasta . $novonome2 . "." . $extensao2;
+
+        $enviar2 = move_uploaded_file($foto2['tmp_name'], $path2);
+
 
 
         $sql_code = "SELECT * FROM imoveis WHERE endereco = '$endereco'";
@@ -91,7 +99,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         if($quantidade == 0) {
 
-        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, venda_loc, piscina, foto1, nome_foto1) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$venda_ou_loc', '$piscina', '$novonome1', '$path1')");  
+        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, venda_loc, piscina, foto1, nome_foto1, foto2, nome_foto2) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$venda_ou_loc', '$piscina', '$novonome1', '$path1', '$novonome2', '$path2')");  
         echo("Cadastro efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {
