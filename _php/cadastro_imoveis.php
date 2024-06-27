@@ -96,7 +96,6 @@
                     <label>Foto 5</label>
                     <input type="file" name="foto5">
                 </p>
-                <!--
                 <p>
                     <label>Foto 6</label>
                     <input type="file" name="foto6">
@@ -277,7 +276,6 @@
                     <label>Foto 50</label>
                     <input type="file" name="foto50">
                 </p>
-                -->
                 <p>
                     <button type="submit">Cadastrar</button>
                 </p>
