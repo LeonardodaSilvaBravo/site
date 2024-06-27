@@ -20,10 +20,10 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
         $foto2 = $_FILES['foto2'];
-        /*
         $foto3 = $_FILES['foto3'];
         $foto4 = $_FILES['foto4'];
         $foto5 = $_FILES['foto5'];
+        /*
         $foto6 = $_FILES['foto6'];
         $foto7 = $_FILES['foto7'];
         $foto8 = $_FILES['foto8'];
@@ -89,6 +89,30 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         $enviar2 = move_uploaded_file($foto2['tmp_name'], $path2);
 
+        $foto3Nome = $foto3['name'];
+        $novonome3 = uniqid();
+
+        $extensao3 = strtolower(PATHINFO($foto3Nome, PATHINFO_EXTENSION));
+        $path3 = $pasta . $novonome3 . "." . $extensao3;
+
+        $enviar3 = move_uploaded_file($foto3['tmp_name'], $path3);
+
+        $foto4Nome = $foto4['name'];
+        $novonome4 = uniqid();
+
+        $extensao4 = strtolower(PATHINFO($foto4Nome, PATHINFO_EXTENSION));
+        $path4 = $pasta . $novonome4 . "." . $extensao4;
+
+        $enviar4 = move_uploaded_file($foto4['tmp_name'], $path4);
+
+        $foto5Nome = $foto5['name'];
+        $novonome5 = uniqid();
+
+        $extensao5 = strtolower(PATHINFO($foto5Nome, PATHINFO_EXTENSION));
+        $path5 = $pasta . $novonome5 . "." . $extensao5;
+
+        $enviar5 = move_uploaded_file($foto5['tmp_name'], $path5);
+
 
 
         $sql_code = "SELECT * FROM imoveis WHERE endereco = '$endereco'";
@@ -99,7 +123,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         if($quantidade == 0) {
 
-        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, venda_loc, piscina, foto1, nome_foto1, foto2, nome_foto2) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$venda_ou_loc', '$piscina', '$novonome1', '$path1', '$novonome2', '$path2')");  
+        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, venda_loc, piscina, foto1, nome_foto1, foto2, nome_foto2, foto3, nome_foto3, foto4, nome_foto4, foto5, nome_foto5) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$venda_ou_loc', '$piscina', '$novonome1', '$path1', '$novonome2', '$path2', '$novonome3', '$path3', '$novonome4', '$path4', '$novonome5', '$path5')");
         echo("Cadastro efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {

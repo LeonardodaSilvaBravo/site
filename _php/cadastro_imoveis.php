@@ -84,7 +84,6 @@
                     <label>Foto 2</label>
                     <input type="file" name="foto2">
                 </p>
-                <!--  
                 <p>
                     <label>Foto 3</label>
                     <input type="file" name="foto3">
@@ -97,6 +96,7 @@
                     <label>Foto 5</label>
                     <input type="file" name="foto5">
                 </p>
+                <!--
                 <p>
                     <label>Foto 6</label>
                     <input type="file" name="foto6">
