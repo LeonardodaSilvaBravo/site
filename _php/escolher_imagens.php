@@ -25,7 +25,11 @@
 
         <main>
             <form enctype="multipart/form-data" action="adcionar_imagens.php" method="POST">
-            <p>
+                <p>
+                    <label>Referência</label>
+                    <input type="text" name="ref">
+                </p>
+                <p>
                     <label>Foto 11</label>
                     <input type="file" name="foto11">
                 </p>
