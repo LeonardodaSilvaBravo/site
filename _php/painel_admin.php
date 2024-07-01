@@ -15,7 +15,6 @@
 <body>
     <div id="interface">
         <header id = "cabecalho">
-            <div id="logotipo"><img src="../_imagens/logotipo-doliveira (3).png" alt="Logo Imobiliaria D'Oliveira" id="logo"></div>
             <br>
                 <nav id="menu">
                     <h1>Menu</h1>
