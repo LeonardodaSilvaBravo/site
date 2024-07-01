@@ -24,97 +24,86 @@
         </header>
 
         <main>
-            <form enctype="multipart/form-data" action="cadastrar_imoveis.php" method="POST">
-                <p>
-                    <label>Endereço</label>
-                    <input type="text" name="endereco">
+            <form enctype="multipart/form-data" action="adcionar_imagens.php" method="POST">
+            <p>
+                    <label>Foto 11</label>
+                    <input type="file" name="foto11">
                 </p>
                 <p>
-                    <label>Referência</label>
-                    <input type="text" name="ref">
+                    <label>Foto 12</label>
+                    <input type="file" name="foto12">
                 </p>
                 <p>
-                    <label>Área do terreno</label>
-                    <input type="text" name="areaTer">
+                    <label>Foto 13</label>
+                    <input type="file" name="foto13">
                 </p>
                 <p>
-                    <label>Área Construída</label>
-                    <input type="text" name="AC">
+                    <label>Foto 14</label>
+                    <input type="file" name="foto14">
                 </p>
                 <p>
-                    <label>Número de Quartos</label>
-                    <input type="text" name="quartos">
+                    <label>Foto 15</label>
+                    <input type="file" name="foto15">
                 </p>
                 <p>
-                    <label>Número de Suítes</label>
-                    <input type="text" name="suites">
+                    <label>Foto 16</label>
+                    <input type="file" name="foto16">
                 </p>
                 <p>
-                    <label>Número de Banheiros</label>
-                    <input type="text" name="banheiros">
+                    <label>Foto 17</label>
+                    <input type="file" name="foto17">
                 </p>
                 <p>
-                    <label>Bairro</label>
-                    <input type="text" name="bairo">
+                    <label>foto 18</label>
+                    <input type="file" name="foto18">
                 </p>
                 <p>
-                    <label>Preço</label>
-                    <input type="text" name="preco">
+                    <label>Foto 19</label>
+                    <input type="file" name="foto19">
                 </p>
                 <p>
-                    <label>Oportunidade</label>
-                    <input type="text" name="oportunidade">
+                    <label>Foto 20</label>
+                    <input type="file" name="foto20">
                 </p>
                 <p>
-                    <label>Venda ou Locação</label> <br>
-                    <input type="radio" name="venda_ou_loc" value="venda" id="venda">Venda <br>
-                    <input type="radio" name="venda_ou_loc" value="locacao" id="venda">Locação <br>
+                    <label>Foto 21</label>
+                    <input type="file" name="foto21">
                 </p>
                 <p>
-                    <label>Tem Piscina</label> <br>
-                    <input type="radio" name="piscina" value="sim" id="sim">Sim <br>
-                    <input type="radio" name="piscina" value="nao" id="nao">Não <br>
+                    <label>Foto 22</label>
+                    <input type="file" name="foto22">
                 </p>
                 <p>
-                    <label>Foto 1</label>
-                    <input type="file" name="foto1">
-                </p>
-                
-                <p>
-                    <label>Foto 2</label>
-                    <input type="file" name="foto2">
+                    <label>Foto 23</label>
+                    <input type="file" name="foto23">
                 </p>
                 <p>
-                    <label>Foto 3</label>
-                    <input type="file" name="foto3">
+                    <label>Foto 24</label>
+                    <input type="file" name="foto24">
                 </p>
                 <p>
-                    <label>Foto 4</label>
-                    <input type="file" name="foto4">
+                    <label>Foto 25</label>
+                    <input type="file" name="foto25">
                 </p>
                 <p>
-                    <label>Foto 5</label>
-                    <input type="file" name="foto5">
+                    <label>Foto 26</label>
+                    <input type="file" name="foto26">
                 </p>
                 <p>
-                    <label>Foto 6</label>
-                    <input type="file" name="foto6">
+                    <label>Foto 27</label>
+                    <input type="file" name="foto27">
                 </p>
                 <p>
-                    <label>Foto 7</label>
-                    <input type="file" name="foto7">
+                    <label>Foto 28</label>
+                    <input type="file" name="foto28">
                 </p>
                 <p>
-                    <label>Foto 8</label>
-                    <input type="file" name="foto8">
+                    <label>Foto 29</label>
+                    <input type="file" name="foto29">
                 </p>
                 <p>
-                    <label>Foto 9</label>
-                    <input type="file" name="foto9">
-                </p>
-                <p>
-                    <label>Foto 10</label>
-                    <input type="file" name="foto10">
+                    <label>Foto 30</label>
+                    <input type="file" name="foto30">
                 </p>
                 <p>
                     <button type="submit">Cadastrar</button>
