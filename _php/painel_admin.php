@@ -20,6 +20,7 @@
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="logout.php">Sair</a></li>
+                        <li><a href="alterar_imoveis.php">Alterar Imóveis</a></li>
                         <li><a href="cadastro_imoveis.php">Cadastrar Imóveis</a></li>
                         <li><a href="excluir_imovel.php">Excluir Imóveis</a></li>
                         <li><a href="escolher_imagens.php">Adcionar Imagens aos Imóveis</a></li>

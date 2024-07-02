@@ -3,7 +3,7 @@ include("conexao.php");
 if(isset($_POST['endereco']) || isset($_POST['ref'])){
     if(strlen($_POST['endereco']) == 0) {
         echo "Preencha o endereço";
-    } else if(strlen($_POST['ref']) == 0) {
+    } else if(strlen($_POST['ref_atual']) == 0) {
         echo "Preencha a referência";
     } else {
         $endereco = $mysqli->real_escape_string($_POST['endereco']);
@@ -112,19 +112,19 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         $enviar10 = move_uploaded_file($foto10['tmp_name'], $path10);
 
-        $sql_code = "SELECT * FROM imoveis WHERE endereco = '$endereco'";
+        $sql_code = "SELECT * FROM imoveis WHERE referencia = '$refAtual'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
         $usuario = $sql_query->fetch_assoc();
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 0) {
+        if($quantidade == 1) {
 
-        $mysqli-> query("");
-        echo("Cadastro efetuado com sucesso");
+        $mysqli-> query("UPDATE imoveis SET referencia = '$refNova', endereco = '$endereco', area_terreno = '$areaTer', area_construida = '$areaCon', numero_quartos = '$quartos', numero_suites = '$suites', numero_banheiros = '$banheiros', bairro = '$bairo', preco = '$preco', oportunidade = '$oportunidade', venda_loc = '$venda_ou_loc', piscina = '$piscina', foto1 = '$novonome1', nome_foto1 = '$path1', foto2 = '$novonome2', nome_foto2 = '$path2', foto3 = '$novonome3', nome_foto3 = '$path3', foto4 = '$novonome4', nome_foto4 = '$path4', foto5 = '$novonome5', nome_foto5 = '$path5', foto6 = '$novonome6', nome_foto6 = '$path6', foto7 = '$novonome7', nome_foto7 = '$path7', foto8 = '$novonome8', nome_foto8 = '$path8', foto9 = '$novonome2', nome_foto9 = '$path9', foto10 = '$novonome10', nome_foto10 = '$path10' WHERE imoveis.referencia = '$refAtual';");
+        echo("Atualização efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {
-        echo "Falha ao cadastrar! Endereço já cadastrado";
+        echo "Falha ao atualizar! Referência atual não existe";
     }
 }
 }
