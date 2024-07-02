@@ -15,25 +15,34 @@
 <body>
     <div id="interface">
         <header id = "cabecalho">
+            <div id="logotipo"><img src="../_imagens/logotipo-doliveira (3).png" alt="Logo Imobiliaria D'Oliveira" id="logo"></div>
             <br>
                 <nav id="menu">
                     <h1>Menu</h1>
                     <ul>
-                        <li><a href="logout.php">Sair</a></li>
-                        <li><a href="alterar_imoveis.php">Alterar Imóveis</a></li>
-                        <li><a href="excluir_admin.php">Excluir Admin</a></li>
-                        <li><a href="cadastro_imoveis.php">Cadastrar Imóveis</a></li>
-                        <li><a href="excluir_imovel.php">Excluir Imóveis</a></li>
-                        <li><a href="escolher_imagens.php">Adcionar Imagens aos Imóveis</a></li>
-                        <li><a href="cadastro_admin.php">Cadastrar Admin</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="contact.php">Contato</a></li>
+                        <li><a href="../_html/search.html">Buscar Imóveis</a></li>
+                        <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
                 </nav>
         </header>
 
-        <p>Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.</p>
+        <main>
+            <form action="delete_admin.php" method="POST">
+                <p>
+                    <label>E-mail que será excluido</label>
+                    <input type="text" name="email_atual">
+                </p>
+                <p>
+                    <button type="submit">Excluir</button>
+               
+            </form>
+        </main>
 
         <footer>
-        <div id="social-links">
+
+            <div id="social-links">
             <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
@@ -43,15 +52,12 @@
             <a href="https://www.youtube.com/@DOliveiraImoveisPeruibe" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
-            <a href="https://doliveiraimobiliaria@gmail.com" target="_blank">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
             <a href="https://www.tiktok.com/@doliveiraimoveis" target="_blank">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
 
         </div>
-    
+
         <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
     </footer>
 
