@@ -28,17 +28,25 @@
         </header>
 
         <main>
-            <form action="delete_user.php" method="POST">
+            <form action="alterar.php" method="POST">
                 <p>
-                    <label>E-mail</label>
-                    <input type="text" name="email">
+                    <label>E-mail Atual</label>
+                    <input type="text" name="emailAtual">
                 </p>
                 <p>
-                    <label>Senha</label>
-                    <input type="password" name="senha">
+                    <label>Senha Atual</label>
+                    <input type="password" name="senhaAtual">
                 </p>
                 <p>
-                    <button type="submit">Deletar</button>
+                    <label>E-mail Novo</label>
+                    <input type="text" name="emailNovo">
+                </p>
+                <p>
+                    <label>Senha Nova</label>
+                    <input type="password" name="senhaNova">
+                </p>
+                <p>
+                    <button type="submit">Atualizar</button>
                 </p>
             </form>
         </main>
