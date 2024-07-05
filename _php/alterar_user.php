@@ -46,6 +46,10 @@
                     <input type="password" name="senhaNova">
                 </p>
                 <p>
+                    <label>Nome Novo</label>
+                    <input type="password" name="nomeNovo">
+                </p>
+                <p>
                     <button type="submit">Atualizar</button>
                 </p>
             </form>
