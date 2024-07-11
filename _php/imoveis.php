@@ -1,5 +1,17 @@
 <?php
-    include('protect.php');
+    $usuario = 'root';
+    $senha = '';
+    $database = 'imobiliaria';
+    $host = 'localhost';
+            
+    $mysqli = new MYSQLI($host, $usuario, $senha, $database);
+            
+    if($mysqli->error) {
+        die("Falha ao conectar ao banco de dados: " . $mysqli->error);
+    }
+
+    $sql_imoveis = "SELECT * FROM imoveis ORDER BY preco DESC";
+    $resultado = $mysqli->query($sql_imoveis);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,20 +32,32 @@
                 <nav id="menu">
                     <h1>Menu</h1>
                     <ul>
-                        <li><a href="logout.php">Sair</a></li>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="deletar_user.php">Deletar Conta</a></li>
-                        <li><a href="imoveis.php">Imoveis</a></li>
-                        <li><a href="alterar_user.php">Alterar Conta</a></li>
+                        <li><a href="painel.php">Voltar</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>
                 </nav>
         </header>
 
-        <p>Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.</p>
+        <main>
+            <table>
+                <?php
+                    while($sql_imoveis = mysqli_fetch_assoc($resultado)){
+                    
+                ?>
+                <tr>
+                    <td><img src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Primeira foto da casa" class="lista"></td>
+                </tr>
+                <tr>
+                    <td><?php echo $sql_imoveis ['descricao']; ?></td>
+                </tr>
+                <?php } ?>
+            </table>
+        </main>
 
         <footer>
-        <div id="social-links">
+
+            <div id="social-links">
             <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
@@ -43,15 +67,12 @@
             <a href="https://www.youtube.com/@DOliveiraImoveisPeruibe" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
-            <a href="https://doliveiraimobiliaria@gmail.com" target="_blank">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
             <a href="https://www.tiktok.com/@doliveiraimoveis" target="_blank">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
 
         </div>
-    
+
         <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
     </footer>
 

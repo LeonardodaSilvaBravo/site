@@ -17,6 +17,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $bairo = $mysqli->real_escape_string($_POST['bairo']);
         $preco = $mysqli->real_escape_string($_POST['preco']);
         $oportunidade = $mysqli->real_escape_string($_POST['oportunidade']);
+        $descricao = $mysqli->real_escape_string($_POST['desc']);
         $piscina = $mysqli->real_escape_string($_POST['piscina']);
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
         $foto1 = $_FILES['foto1'];
@@ -120,7 +121,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         if($quantidade == 1) {
 
-        $mysqli-> query("UPDATE imoveis SET referencia = '$refNova', endereco = '$endereco', area_terreno = '$areaTer', area_construida = '$areaCon', numero_quartos = '$quartos', numero_suites = '$suites', numero_banheiros = '$banheiros', bairro = '$bairo', preco = '$preco', oportunidade = '$oportunidade', venda_loc = '$venda_ou_loc', piscina = '$piscina', foto1 = '$novonome1', nome_foto1 = '$path1', foto2 = '$novonome2', nome_foto2 = '$path2', foto3 = '$novonome3', nome_foto3 = '$path3', foto4 = '$novonome4', nome_foto4 = '$path4', foto5 = '$novonome5', nome_foto5 = '$path5', foto6 = '$novonome6', nome_foto6 = '$path6', foto7 = '$novonome7', nome_foto7 = '$path7', foto8 = '$novonome8', nome_foto8 = '$path8', foto9 = '$novonome2', nome_foto9 = '$path9', foto10 = '$novonome10', nome_foto10 = '$path10' WHERE imoveis.referencia = '$refAtual';");
+        $mysqli-> query("UPDATE imoveis SET referencia = '$refNova', endereco = '$endereco', area_terreno = '$areaTer', area_construida = '$areaCon', numero_quartos = '$quartos', numero_suites = '$suites', numero_banheiros = '$banheiros', bairro = '$bairo', preco = '$preco', oportunidade = '$oportunidade', descricao = '$descricao', venda_loc = '$venda_ou_loc', piscina = '$piscina', foto1 = '$novonome1', nome_foto1 = '$path1', foto2 = '$novonome2', nome_foto2 = '$path2', foto3 = '$novonome3', nome_foto3 = '$path3', foto4 = '$novonome4', nome_foto4 = '$path4', foto5 = '$novonome5', nome_foto5 = '$path5', foto6 = '$novonome6', nome_foto6 = '$path6', foto7 = '$novonome7', nome_foto7 = '$path7', foto8 = '$novonome8', nome_foto8 = '$path8', foto9 = '$novonome2', nome_foto9 = '$path9', foto10 = '$novonome10', nome_foto10 = '$path10' WHERE imoveis.referencia = '$refAtual';");
         echo("Atualização efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {

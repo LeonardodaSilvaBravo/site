@@ -69,6 +69,10 @@
                     <input type="text" name="oportunidade">
                 </p>
                 <p>
+                    <label>Descrição</label>
+                    <input type="text" name="desc">
+                </p>
+                <p>
                     <label>Venda ou Locação</label> <br>
                     <input type="radio" name="venda_ou_loc" value="venda" id="venda">Venda <br>
                     <input type="radio" name="venda_ou_loc" value="locacao" id="venda">Locação <br>
