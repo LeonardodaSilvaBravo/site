@@ -78,13 +78,13 @@
                 </p>
                 <p>
                     <label>Venda ou Locação Novo</label> <br>
-                    <input type="radio" name="venda_ou_loc" value="venda" id="venda">Venda <br>
-                    <input type="radio" name="venda_ou_loc" value="locacao" id="venda">Locação <br>
+                    <input type="radio" name="venda_ou_loc" value="Venda" id="venda">Venda <br>
+                    <input type="radio" name="venda_ou_loc" value="Locaçao" id="venda">Locação <br>
                 </p>
                 <p>
                     <label>Tem Piscina Agora</label> <br>
-                    <input type="radio" name="piscina" value="sim" id="sim">Sim <br>
-                    <input type="radio" name="piscina" value="nao" id="nao">Não <br>
+                    <input type="radio" name="piscina" value="Sim" id="sim">Sim <br>
+                    <input type="radio" name="piscina" value="Não" id="nao">Não <br>
                 </p>
                 <p>
                     <label>Foto 1</label>
