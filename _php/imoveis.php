@@ -71,6 +71,15 @@
                 <?php } ?>
             </table>
 
+            <form action="more.php" method="POST">
+                <p>
+                    <label>Referência</label>
+                    <input type="text" name="ref">
+                </p>
+                <p>
+                    <button type="submit">Buscar</button>
+                </p>
+            </form>
         </main>
 
         <footer>

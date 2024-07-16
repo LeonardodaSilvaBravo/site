@@ -40,7 +40,7 @@ if( isset($_POST['ref'])){
         $novonome12 = uniqid();
 
         $extensao12 = strtolower(PATHINFO($foto12Nome, PATHINFO_EXTENSION));
-        $path12 = $pasta . $novonome2 . "." . $extensao12;
+        $path12 = $pasta . $novonome12 . "." . $extensao12;
 
         $enviar12 = move_uploaded_file($foto12['tmp_name'], $path12);
 
@@ -109,12 +109,12 @@ if( isset($_POST['ref'])){
         $enviar20 = move_uploaded_file($foto20['tmp_name'], $path20);
 
         $foto21Nome = $foto21['name'];
-        $novonome1 = uniqid();
+        $novonome21 = uniqid();
 
         $extensao21 = strtolower(PATHINFO($foto21Nome, PATHINFO_EXTENSION));
         $path21 = $pasta . $novonome21 . "." . $extensao21;
 
-        $enviar21 = move_uploaded_file($foto1['tmp_name'], $path21);
+        $enviar21 = move_uploaded_file($foto21['tmp_name'], $path21);
 
         $foto22Nome = $foto22['name'];
         $novonome22 = uniqid();
