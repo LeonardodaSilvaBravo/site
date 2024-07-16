@@ -50,6 +50,7 @@
                     <td>Número de Quartos</td>
                     <td>Número de Banheiros</td>
                     <td>Número de Suítes</td>
+                    <td>Refrerência</td>
                 </thead>
                 <?php
                     while($sql_imoveis = mysqli_fetch_assoc($resultado)){
@@ -57,7 +58,7 @@
                 ?>
                 
                 <tbody>
-                    <td><img height="100" width="100" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Primeira foto da casa" class="lista"></td>
+                    <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Primeira foto da casa" class="lista"></td>
                     <td><p><?php echo $sql_imoveis ['descricao']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['preco']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['piscina']; ?></p></td>
@@ -65,9 +66,11 @@
                     <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['numero_banheiros']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['numero_suites']; ?></p></td>
+                    <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
                 </tbody>
                 <?php } ?>
             </table>
+
         </main>
 
         <footer>
