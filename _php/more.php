@@ -55,6 +55,7 @@ if(isset($_POST['ref'])){
                     <td>Fotos</td>
                     <td></td>
                     <td></td>
+                    <td></td>
                 </thead>
                 <?php
                     while($sql_imoveis = mysqli_fetch_assoc($resultado)){
@@ -104,6 +105,40 @@ if(isset($_POST['ref'])){
                         <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto28']; ?>" alt="Vigésima Oitava foto da casa" class="lista"></td>
                         <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto29']; ?>" alt="Vigésima Nona foto da casa" class="lista"></td>
                         <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto30']; ?>" alt="Trigésima foto da casa" class="lista"></td>
+                    </tbody>
+            </table>
+
+            <table border="1">
+                    <theard>
+                        <td>Referência</td>
+                        <td>Descrição</td>
+                        <td>Endereço</td>
+                        <td>Bairro</td>
+                        <td>Área do Terreno</td>
+                        <td>Área Construída</td>
+                        <td>Preço</td>
+                        <td>Tem Piscina</td>
+                        <td>Casa para Venda ou Locação</td>
+                        <td>Número de Quartos</td>
+                        <td>Número de Banheiros</td>
+                        <td>Número de Suítes</td>
+                        <td>Oportunidade</td>
+                    </thead>
+
+                    <tbody>
+                        <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['descricao']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['endereco']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['bairro']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['area_terreno']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['area_construida']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['preco']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['piscina']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['venda_loc']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['numero_banheiros']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['numero_suites']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['oportunidade']; ?></p></td>
                     </tbody>
                 <?php } ?>
             </table>

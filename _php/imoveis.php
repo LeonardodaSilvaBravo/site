@@ -58,6 +58,7 @@
                 ?>
                 
                 <tbody>
+                    <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
                     <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Primeira foto da casa" class="lista"></td>
                     <td><p><?php echo $sql_imoveis ['descricao']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['preco']; ?></p></td>
@@ -66,7 +67,6 @@
                     <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['numero_banheiros']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['numero_suites']; ?></p></td>
-                    <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
                 </tbody>
                 <?php } ?>
             </table>
