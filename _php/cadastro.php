@@ -19,7 +19,7 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="contact.php">Contato</a></li>
-                        <li><a href="../_html/search.html">Buscar Imóveis</a></li>
+                        <li><a href=".login.html">voltar</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
                 </nav>
@@ -39,12 +39,6 @@
                     <label>Senha</label>
                     <input type="password" name="senha">
                 </p>
-              <!--  <p>
-                    <label>Sexo:</label><br>
-                    <input type="radio" id="feminino" name="sexo">Feminino
-                    <input type="radio" id="masculino" name="sexo">Masculino
-                </p>
-                 </p>-->
                 <p>
                     <button type="submit">Cadastrar</button>
                
