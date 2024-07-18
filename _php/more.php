@@ -41,7 +41,7 @@ if(isset($_POST['ref'])){
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="imoveis.php">Voltar</a></li>
+                        <li><a href="search?page=1.php">Voltar</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>
                 </nav>

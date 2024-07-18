@@ -1,7 +1,19 @@
 <?php
 include("conexao.php");
 
-$sql_imoveis_query = "SELECT * FROM imoveis";
+$sql_imoveis_count_query = " SELECT COUNT(*) AS c FROM imoveis";
+$sql_imoveis_count_query_exec = $mysqli->query($sql_imoveis_count_query) or die($mysqli->error);
+
+$sql_imoveis_count = $sql_imoveis_count_query_exec->fetch_assoc();
+$imoveis_count = $sql_imoveis_count['c'];
+
+$page = $_GET['page'] ? intval($_GET['page']):1;
+$limit = 3;
+$offset = ($page - 1) * $limit;
+
+$page_number = ceil($imoveis_count/$limit);
+
+$sql_imoveis_query = "SELECT * FROM imoveis ORDER BY preco DESC LIMIT {$limit} OFFSET {$offset}";
 $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->error);
 
 ?>
@@ -35,6 +47,7 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
         <main>
             <table border="1">
                 <theard>
+                    <td>Refrerência</td>
                     <td>Foto em Destaque</td>
                     <td>Descrição</td>
                     <td>Preço</td>
@@ -43,10 +56,9 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
                     <td>Número de Quartos</td>
                     <td>Número de Banheiros</td>
                     <td>Número de Suítes</td>
-                    <td>Refrerência</td>
                 </thead>
                 <?php
-                    while($sql_imoveis = mysqli_fetch_assoc($$sql_imoveis_query_exec)){
+                    while($sql_imoveis = mysqli_fetch_assoc($sql_imoveis_query_exec)){
                     
                 ?>
                 
@@ -64,6 +76,8 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
                 <?php } ?>
             </table>
 
+            <br>
+
             <form action="more.php" method="POST">
                 <p>
                     <label>Referência</label>
@@ -73,6 +87,29 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
                     <button type="submit">Buscar</button>
                 </p>
             </form>
+
+            <br>
+
+            <p>
+                <?php echo "Página: {$page}"; ?> <br>
+                <?php echo "Número de Páginas: {$page_number}"; ?>
+            </p>
+
+            <br>
+
+            <p>
+                <a href="?page=1"><<</a>
+                <?php
+                for($p = 1; $p <= $page_number; $p++){
+                    if($p === $page){
+                        echo "[{$p}]";
+                    } else {
+                        echo "<a href='?page={$p}'>[{$p}]</a> ";
+                    }
+                }
+                ?>
+                <a href="?page=<?php echo "$page_number"; ?>">>></a>
+            </p>
         </main>
 
         <footer>
