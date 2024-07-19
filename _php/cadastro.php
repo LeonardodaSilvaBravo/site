@@ -19,7 +19,7 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="contact.php">Contato</a></li>
-                        <li><a href=".login.html">voltar</a></li>
+                        <li><a href="login.php">Voltar</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
                 </nav>
