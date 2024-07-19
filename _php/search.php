@@ -128,10 +128,10 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
 
-        </div>
+            </div>
 
-        <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
-    </footer>
+            <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a></p>
+        </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -32,7 +32,7 @@
         <p>Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.</p>
 
         <footer>
-        <div id="social-links">
+          <div id="social-links">
             <a href="https://www.facebook.com/doliveiraimoveisperuibe/" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
@@ -46,10 +46,10 @@
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
 
-        </div>
+          </div>
     
-        <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
-    </footer>
+          <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a></p>
+        </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

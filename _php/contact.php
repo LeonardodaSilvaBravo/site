@@ -22,7 +22,7 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="login.php">Login</a></li>
-                        <li><a href="imoveis.php">Buscar Imóveis</a></li>
+                        <li><a href="search.php?page=1">Buscar Imóveis</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
                 </nav>
@@ -70,8 +70,8 @@
     
             </div>
     
-        <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
-    </footer>
+          <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a></p>
+        </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

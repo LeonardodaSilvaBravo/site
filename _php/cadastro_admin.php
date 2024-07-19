@@ -40,12 +40,6 @@
                     <label>Senha</label>
                     <input type="password" name="senha">
                 </p>
-              <!--  <p>
-                    <label>Sexo:</label><br>
-                    <input type="radio" id="feminino" name="sexo">Feminino
-                    <input type="radio" id="masculino" name="sexo">Masculino
-                </p>
-                 </p>-->
                 <p>
                     <button type="submit">Cadastrar</button>
                
@@ -70,7 +64,7 @@
 
         </div>
 
-        <p>Feito com ♥ pelo <a href="https://github.com/LeonardodaSilvaBravo" target="_blank">Leonardo</a></p>
+        <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a></p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
