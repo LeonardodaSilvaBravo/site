@@ -28,6 +28,8 @@
         </header>
 
         <main>
+            <h3>Caso vá alterar algo todos os campos devem ser preenchidos, mesmo que com as mesmas informações.</h3>
+            <h4>Ex: Caso não queira alterar o nome simplesmente reescrever o atual.</h4>
             <form action="alterar.php" method="POST">
                 <p>
                     <label>E-mail Atual</label>

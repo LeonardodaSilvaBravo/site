@@ -28,6 +28,7 @@
         </header>
 
         <main>
+            <h3>Ao colocar suas informações e deletar não será possível recuperar a conta.</h3>
             <form action="delete_user.php" method="POST">
                 <p>
                     <label>E-mail</label>

@@ -47,7 +47,7 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
         <main>
             <table border="1">
                 <theard>
-                    <td>Refrerência</td>
+                    <td>Referência</td>
                     <td>Foto em Destaque</td>
                     <td>Descrição</td>
                     <td>Preço</td>

@@ -48,6 +48,7 @@ if(isset($_POST['ref'])){
         </header>
 
         <main>
+            <h3>Para ver melhor as imagens clique Control e as arraste com o mouse para uma nova guia.</h3>
             <table border="1">
                 <theard>
                     <td></td>
