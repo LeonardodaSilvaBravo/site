@@ -22,7 +22,8 @@
                     <ul>
                         <li><a href="logout.php">Sair</a></li>
                         <li><a href="deletar_user.php">Deletar Conta</a></li>
-                        <li><a href="search?page=1.php">Imoveis</a></li>
+                        <li><a href="all.php?page=1">Todos Imoveis</a></li>
+                        <li><a href="search.php?page=1">Buscar</a></li>
                         <li><a href="alterar_user.php">Alterar Conta</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>

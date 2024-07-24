@@ -65,7 +65,6 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="login.php">Login</a></li>
                         <li><a href="contact.php">Contato</a></li>
-                        <li><a href="../_html/search.html">Buscar Imóveis</a></li>
                     </ul>
                 </nav>
         </header>

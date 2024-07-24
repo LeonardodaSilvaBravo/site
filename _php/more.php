@@ -41,78 +41,23 @@ if(isset($_POST['ref'])){
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="search?page=1.php">Voltar</a></li>
+                        <li><a href="search.php?page=1">Buscar</a></li>
+                        <li><a href="all.php?page=1">Todos</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>
                 </nav>
         </header>
 
         <main>
-            <h3>Para ver melhor as imagens clique Control e as arraste com o mouse para uma nova guia.</h3>
-            <table border="1">
-                <theard>
-                    <td></td>
-                    <td></td>
-                    <td>Fotos</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </thead>
                 <?php
                     while($sql_imoveis = mysqli_fetch_assoc($resultado)){
                     
                 ?>
-                
-                    <tbody>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Foto principal da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto2']; ?>" alt="Segunda foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto3']; ?>" alt="Terceira foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto4']; ?>" alt="Quarta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto5']; ?>" alt="Quinta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto6']; ?>" alt="Sexta foto da casa" class="lista"></td>
-                    </tbody>
-
-                    <tbody>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto7']; ?>" alt="Sétima foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto8']; ?>" alt="Oitava foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto9']; ?>" alt="Nona foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto10']; ?>" alt="Décima foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto11']; ?>" alt="Décima Primeira foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto12']; ?>" alt="Décima Segunda foto da casa" class="lista"></td>
-                    </tbody>
-
-                    <tbody>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto13']; ?>" alt="Décima Terceira foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto14']; ?>" alt="Décima Quarta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto15']; ?>" alt="Décima Quinta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto16']; ?>" alt="Décima Sexta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto17']; ?>" alt="Décima Sétima foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto18']; ?>" alt="Décima Oítava foto da casa" class="lista"></td>
-                    </tbody>
-
-                    <tbody>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto19']; ?>" alt="Décima Nona foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto20']; ?>" alt="Vigésima foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto21']; ?>" alt="Vigésima Primeira foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto22']; ?>" alt="Vigésima Segunda foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto23']; ?>" alt="Vigésima Terceira foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto24']; ?>" alt="Vigésima Quarta foto da casa" class="lista"></td>
-                    </tbody>
-
-                    <tbody>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto25']; ?>" alt="Vigésima Quinta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto26']; ?>" alt="Vigésima Sexta foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto27']; ?>" alt="Vigésima Sétima foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto28']; ?>" alt="Vigésima Oitava foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto29']; ?>" alt="Vigésima Nona foto da casa" class="lista"></td>
-                        <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto30']; ?>" alt="Trigésima foto da casa" class="lista"></td>
-                    </tbody>
-            </table>
+            <h2><?php echo $sql_imoveis ['descricao']; ?></h2>
 
             <table border="1">
                     <theard>
                         <td>Referência</td>
-                        <td>Descrição</td>
                         <td>Endereço</td>
                         <td>Bairro</td>
                         <td>Área do Terreno</td>
@@ -128,7 +73,6 @@ if(isset($_POST['ref'])){
 
                     <tbody>
                         <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
-                        <td><p><?php echo $sql_imoveis ['descricao']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['endereco']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['bairro']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['area_terreno']; ?></p></td>
@@ -141,8 +85,65 @@ if(isset($_POST['ref'])){
                         <td><p><?php echo $sql_imoveis ['numero_suites']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['oportunidade']; ?></p></td>
                     </tbody>
-                <?php } ?>
             </table>
+            <h3>Para ver melhor as imagens clique nelas.</h3>
+            <table border="1">
+                <theard>
+                    <td></td>
+                    <td></td>
+                    <td>Fotos</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </thead>
+                
+                
+                    <tbody>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto1']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Foto principal da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto2']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto2']; ?>" alt="Segunda foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto3']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto3']; ?>" alt="Terceira foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto4']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto4']; ?>" alt="Quarta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto5']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto5']; ?>" alt="Quinta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto6']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto6']; ?>" alt="Sexta foto da casa" class="lista"></a></td>
+                    </tbody>
+
+                    <tbody>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto7']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto7']; ?>" alt="Foto principal da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto8']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto8']; ?>" alt="Segunda foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto9']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto9']; ?>" alt="Terceira foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto10']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto10']; ?>" alt="Quarta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto11']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto11']; ?>" alt="Quinta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto12']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto12']; ?>" alt="Sexta foto da casa" class="lista"></a></td>
+                    </tbody>
+
+                    <tbody>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto13']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto13']; ?>" alt="Foto principal da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto14']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto14']; ?>" alt="Segunda foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto15']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto15']; ?>" alt="Terceira foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto16']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto16']; ?>" alt="Quarta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto17']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto17']; ?>" alt="Quinta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto18']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto18']; ?>" alt="Sexta foto da casa" class="lista"></a></td>
+                    </tbody>
+
+                    <tbody>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto19']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto19']; ?>" alt="Foto principal da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto20']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto20']; ?>" alt="Segunda foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto21']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto21']; ?>" alt="Terceira foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto22']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto22']; ?>" alt="Quarta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto23']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto23']; ?>" alt="Quinta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto24']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto24']; ?>" alt="Sexta foto da casa" class="lista"></a></td>
+                    </tbody>
+
+                    <tbody>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto25']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto25']; ?>" alt="Foto principal da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto26']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto26']; ?>" alt="Segunda foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto27']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto27']; ?>" alt="Terceira foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto28']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto28']; ?>" alt="Quarta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto29']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto29']; ?>" alt="Quinta foto da casa" class="lista"></a></td>
+                        <td><a href="<?php echo $sql_imoveis ['nome_foto30']; ?>" target="_blank"><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto30']; ?>" alt="Sexta foto da casa" class="lista"></a></td>
+                    </tbody>
+            </table>
+                <?php } ?>
         </main>
 
         <footer>
