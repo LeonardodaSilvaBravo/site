@@ -1,21 +1,37 @@
 <?php
 include("conexao.php");
+if(isset($_POST['areaTer']) || isset($_POST['precoMenor'])){
+    if(strlen($_POST['areaTer']) == 0) {
+        echo "Preencha todos os campos";
+    } else if(strlen($_POST['precoMenor']) == 0) {
+        echo "Preencha o preco";
+    } else {
+        $areaTer = $mysqli->real_escape_string($_POST['areaTer']);
+        $areaCon = $mysqli->real_escape_string($_POST['AC']);
+        $quartos = $mysqli->real_escape_string($_POST['quartos']);
+        $suites = $mysqli->real_escape_string($_POST['suites']);
+        $banheiros = $mysqli->real_escape_string($_POST['banheiros']);
+        $preco_maior = $mysqli->real_escape_string($_POST['precoMaior']);
+        $preco_menor = $mysqli->real_escape_string($_POST['precoMenor']);
+        $piscina = $mysqli->real_escape_string($_POST['piscina']);
+        $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
 
-$sql_imoveis_count_query = " SELECT COUNT(*) AS c FROM imoveis";
-$sql_imoveis_count_query_exec = $mysqli->query($sql_imoveis_count_query) or die($mysqli->error);
+    $sql_imoveis_count_query = " SELECT COUNT(*) AS c FROM imoveis";
+    $sql_imoveis_count_query_exec = $mysqli->query($sql_imoveis_count_query) or die($mysqli->error);
 
-$sql_imoveis_count = $sql_imoveis_count_query_exec->fetch_assoc();
-$imoveis_count = $sql_imoveis_count['c'];
+    $sql_imoveis_count = $sql_imoveis_count_query_exec->fetch_assoc();
+    $imoveis_count = $sql_imoveis_count['c'];
 
-$page = $_GET['page'] ? intval($_GET['page']):1;
-$limit = 3;
-$offset = ($page - 1) * $limit;
+    $page = $_GET['page'] ? intval($_GET['page']):1;
+    $limit = 5;
+    $offset = ($page - 1) * $limit;
 
-$page_number = ceil($imoveis_count/$limit);
+    $page_number = ceil($imoveis_count/$limit);
 
-$sql_imoveis_query = "SELECT * FROM imoveis ORDER BY preco DESC LIMIT {$limit} OFFSET {$offset}";
-$sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->error);
-
+    $sql_imoveis_query = "SELECT * FROM imoveis WHERE imoveis.preco >= '$preco_menor' AND imoveis.piscina = '$piscina' AND imoveis.numero_quartos = '$quartos' AND imoveis.preco <= '$preco_maior' AND imoveis.numero_suites = '$suites' AND imoveis.numero_banheiros = '$banheiros' AND imoveis.venda_loc = '$venda_ou_loc'";
+    $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->error);
+    }
+}
 ?>
 
 <!DOCTYPE html>

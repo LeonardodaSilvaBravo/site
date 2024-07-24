@@ -8,7 +8,7 @@ $sql_imoveis_count = $sql_imoveis_count_query_exec->fetch_assoc();
 $imoveis_count = $sql_imoveis_count['c'];
 
 $page = $_GET['page'] ? intval($_GET['page']):1;
-$limit = 3;
+$limit = 10;
 $offset = ($page - 1) * $limit;
 
 $page_number = ceil($imoveis_count/$limit);
@@ -38,7 +38,7 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="search.php?page=1">Buscar</a></li>
+                        <li><a href="buscar.php">Buscar</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>
                 </nav>
