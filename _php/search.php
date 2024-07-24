@@ -7,7 +7,6 @@ if(isset($_POST['areaTer']) || isset($_POST['precoMenor'])){
         echo "Preencha o preco";
     } else {
         $areaTer = $mysqli->real_escape_string($_POST['areaTer']);
-        $areaCon = $mysqli->real_escape_string($_POST['AC']);
         $quartos = $mysqli->real_escape_string($_POST['quartos']);
         $suites = $mysqli->real_escape_string($_POST['suites']);
         $banheiros = $mysqli->real_escape_string($_POST['banheiros']);
@@ -28,7 +27,7 @@ if(isset($_POST['areaTer']) || isset($_POST['precoMenor'])){
 
     $page_number = ceil($imoveis_count/$limit);
 
-    $sql_imoveis_query = "SELECT * FROM imoveis WHERE imoveis.preco >= '$preco_menor' AND imoveis.piscina = '$piscina' AND imoveis.numero_quartos = '$quartos' AND imoveis.preco <= '$preco_maior' AND imoveis.numero_suites = '$suites' AND imoveis.numero_banheiros = '$banheiros' AND imoveis.venda_loc = '$venda_ou_loc'";
+    $sql_imoveis_query = "SELECT * FROM imoveis WHERE imoveis.preco >= '$preco_menor' AND imoveis.piscina = '$piscina' AND imoveis.numero_quartos = '$quartos' AND imoveis.preco <= '$preco_maior' AND imoveis.numero_suites = '$suites' AND imoveis.numero_banheiros = '$banheiros' AND imoveis.venda_loc = '$venda_ou_loc' AND imoveis.area_terreno >= '$areaTer' ";
     $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->error);
     }
 }

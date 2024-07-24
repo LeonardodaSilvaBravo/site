@@ -28,12 +28,8 @@
         <main>
             <form action="search.php?page=1" method="POST">
                 <p>
-                    <label>Área do terreno</label>
+                    <label>Área Mínima do terreno</label>
                     <input type="text" name="areaTer">
-                </p>
-                <p>
-                    <label>Área Construída</label>
-                    <input type="text" name="AC">
                 </p>
                 <p>
                     <label>Número de Quartos</label>
