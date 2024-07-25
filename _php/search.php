@@ -95,6 +95,7 @@ if(isset($_POST['areaTer']) || isset($_POST['precoMenor'])){
             <br>
 
             <form action="more.php" method="POST">
+                <h3>Para Mais Informações Digite A Referência da Primeira Coluna Aqui</h3>
                 <p>
                     <label>Referência</label>
                     <input type="text" name="ref">
