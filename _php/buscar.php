@@ -32,23 +32,23 @@
                     <input type="text" name="areaTer">
                 </p>
                 <p>
-                    <label>Número de Quartos</label>
+                    <label>Número Mínimo de Quartos</label>
                     <input type="text" name="quartos">
                 </p>
                 <p>
-                    <label>Número de Suítes</label>
+                    <label>Número Mínimo de Suítes</label>
                     <input type="text" name="suites">
                 </p>
                 <p>
-                    <label>Número de Banheiros</label>
+                    <label>Número Mínimo de Banheiros</label>
                     <input type="text" name="banheiros">
                 </p>
                 <p>
-                    <label>Preço Maior</label>
+                    <label>Valor Máximo</label>
                     <input type="text" name="precoMaior">
                 </p>
                 <p>
-                    <label>Preço Menor</label>
+                    <label>Valor Mínimo</label>
                     <input type="text" name="precoMenor">
                 </p>
                 <p>
