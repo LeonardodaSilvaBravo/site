@@ -27,6 +27,7 @@
 
         <main>
             <form action="search.php?page=1" method="POST">
+                <h3>Para a busca funcionar corretamente todas os campos devem ser preenchidos, mesmo que com o número zero.</h3>
                 <p>
                     <label>Área Mínima do terreno</label>
                     <input type="text" name="areaTer">
