@@ -19,7 +19,9 @@
 }
 
 body{
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: var(--cor1);
 }
 
@@ -41,30 +43,39 @@ main{
 div#interface{
     background-color: var(--cor4);
 }
+
 div#logotipo {
     text-align: center;
-  }
+}
+
 img#logo{
     width: 200px;
     height: 100px;
     margin: 0;
     padding: 0;
 }
+
 nav h1{
     display: none;
 }
+
 header h1 {
     text-align: center;
 
 }
-h1 {
-    color: var(--cor2);
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 20px;
 }
 
 nav#menu {
     display: block;
     position: absolute;
-    top: 0px;
+    top: -15px;
     right: 0%;
 }
 
