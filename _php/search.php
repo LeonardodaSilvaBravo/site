@@ -81,7 +81,7 @@ if(isset($_POST['areaTer']) || isset($_POST['precoMenor'])){
                     <td><p><?php echo $sql_imoveis ['referencia']; ?></p></td>
                     <td><img height="200" width="200" src="<?php echo $sql_imoveis ['nome_foto1']; ?>" alt="Primeira foto da casa" class="lista"></td>
                     <td><p><?php echo $sql_imoveis ['descricao']; ?></p></td>
-                    <td><p><?php echo $sql_imoveis ['preco']; ?></p></td>
+                    <td><p><span>R$</span><?php echo $sql_imoveis ['preco']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['piscina']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['venda_loc']; ?></p></td>
                     <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
