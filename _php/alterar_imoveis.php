@@ -68,8 +68,10 @@
                     <input type="text" name="preco">
                 </p>
                 <p>
-                    <label>Oportunidade Nova</label>
-                    <input type="text" name="oportunidade">
+                    <label>Tipo de Imóvel</label> <br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Casa<br>
+                    <input type="radio" name="tipo" value="Terreno" id="tipo">Terreno<br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Apartamento<br>
                 </p>
                 <p>
                     <label>Descrição Nova</label>

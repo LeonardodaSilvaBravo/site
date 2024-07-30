@@ -67,7 +67,7 @@ if(isset($_POST['ref'])){
                         <td>Número de Quartos</td>
                         <td>Número de Banheiros</td>
                         <td>Número de Suítes</td>
-                        <td>Oportunidade</td>
+                        <td>Tipo do Imóvel</td>
                     </thead>
 
                     <tbody>
@@ -82,7 +82,7 @@ if(isset($_POST['ref'])){
                         <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['numero_banheiros']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['numero_suites']; ?></p></td>
-                        <td><p><?php echo $sql_imoveis ['oportunidade']; ?></p></td>
+                        <td><p><?php echo $sql_imoveis ['tipo']; ?></p></td>
                     </tbody>
             </table>
             <h3>Para ver melhor as imagens clique nelas.</h3>

@@ -64,8 +64,10 @@
                     <input type="text" name="preco">
                 </p>
                 <p>
-                    <label>Oportunidade</label>
-                    <input type="text" name="oportunidade">
+                    <label>Tipo de Imóvel</label> <br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Casa<br>
+                    <input type="radio" name="tipo" value="Terreno" id="tipo">Terreno<br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Apartamento<br>
                 </p>
                 <p>
                     <label>Descrição</label>
@@ -74,7 +76,7 @@
                 <p>
                     <label>Venda ou Locação</label> <br>
                     <input type="radio" name="venda_ou_loc" value="Venda" id="venda">Venda <br>
-                    <input type="radio" name="venda_ou_loc" value="Locaçao" id="venda">Locação <br>
+                    <input type="radio" name="venda_ou_loc" value="Locaçao" id="locacao">Locação <br>
                 </p>
                 <p>
                     <label>Tem Piscina</label> <br>

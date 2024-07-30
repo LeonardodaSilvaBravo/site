@@ -52,6 +52,12 @@
                     <input type="text" name="precoMenor">
                 </p>
                 <p>
+                    <label>Tipo de Imóvel</label> <br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Casa<br>
+                    <input type="radio" name="tipo" value="Terreno" id="tipo">Terreno<br>
+                    <input type="radio" name="tipo" value="Casa" id="tipo">Apartamento<br>
+                </p>
+                <p>
                     <label>Venda ou Locação</label> <br>
                     <input type="radio" name="venda_ou_loc" value="Venda" id="venda">Venda <br>
                     <input type="radio" name="venda_ou_loc" value="Locaçao" id="venda">Locação <br>

@@ -15,7 +15,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
         $banheiros = $mysqli->real_escape_string($_POST['banheiros']);
         $bairo = $mysqli->real_escape_string($_POST['bairo']);
         $preco = $mysqli->real_escape_string($_POST['preco']);
-        $oportunidade = $mysqli->real_escape_string($_POST['oportunidade']);
+        $tipo = $mysqli->real_escape_string($_POST['tipo']);
         $descricao = $mysqli->real_escape_string($_POST['desc']);
         $piscina = $mysqli->real_escape_string($_POST['piscina']);
         $venda_ou_loc = $mysqli->real_escape_string($_POST['venda_ou_loc']);
@@ -120,7 +120,7 @@ if(isset($_POST['endereco']) || isset($_POST['ref'])){
 
         if($quantidade == 0) {
 
-        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, oportunidade, descricao, venda_loc, piscina, foto1, nome_foto1, foto2, nome_foto2, foto3, nome_foto3, foto4, nome_foto4, foto5, nome_foto5, foto6, nome_foto6, foto7, nome_foto7, foto8, nome_foto8, foto9, nome_foto9, foto10, nome_foto10) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$oportunidade', '$descricao', '$venda_ou_loc', '$piscina', '$novonome1', '$path1', '$novonome2', '$path2', '$novonome3', '$path3', '$novonome4', '$path4', '$novonome5', '$path5', '$novonome6', '$path6', '$novonome7', '$path7', '$novonome8', '$path8', '$novonome9', '$path9', '$novonome10', '$path10')");
+        $mysqli-> query("INSERT INTO imoveis (referencia, endereco, area_terreno, area_construida, numero_quartos, numero_suites, numero_banheiros, bairro, preco, tipo, descricao, venda_loc, piscina, foto1, nome_foto1, foto2, nome_foto2, foto3, nome_foto3, foto4, nome_foto4, foto5, nome_foto5, foto6, nome_foto6, foto7, nome_foto7, foto8, nome_foto8, foto9, nome_foto9, foto10, nome_foto10) VALUES ('$ref', '$endereco', '$areaTer', '$areaCon', '$quartos', '$suites', '$banheiros', '$bairo', '$preco', '$tipo', '$descricao', '$venda_ou_loc', '$piscina', '$novonome1', '$path1', '$novonome2', '$path2', '$novonome3', '$path3', '$novonome4', '$path4', '$novonome5', '$path5', '$novonome6', '$path6', '$novonome7', '$path7', '$novonome8', '$path8', '$novonome9', '$path9', '$novonome10', '$path10')");
         echo("Cadastro efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {
