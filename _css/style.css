@@ -20,8 +20,8 @@
 
 body{
     padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: var(--cor1);
 }
 
@@ -202,7 +202,7 @@ span{
     color: var(--cor3);
 }
 .banner{
-    width: 90%;
+    width: 95%;
     text-align: center;
     margin: 0 auto;
 }
