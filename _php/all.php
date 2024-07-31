@@ -130,7 +130,7 @@ $sql_imoveis_query_exec = $mysqli->query($sql_imoveis_query) or die($mysqli->err
 
             </div>
 
-            <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a></p>
+            <p>Made by <a href="https://github.com/LeonardodaSilvaBravo" target="_blank" style="text-decoration: none; color: black;">Leonardo</a> | © 2024 All Rights Reserved</p>
         </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
