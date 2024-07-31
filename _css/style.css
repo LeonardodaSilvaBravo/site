@@ -210,3 +210,17 @@ span{
     text-align: center;
     margin: 0 auto;
 }
+
+a#whatsapp {
+    color: var(--cor4);
+    text-decoration: none;
+    transition: color background-color 0.2s;
+    background-color: var(--cor1);
+    padding: 10px;
+    margin: 2px;
+}
+
+a#whatsapp:hover {
+    color: var(--cor3);
+    background-color: var(--cor2);
+}

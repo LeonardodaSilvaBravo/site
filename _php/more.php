@@ -145,6 +145,8 @@ if(isset($_POST['ref'])){
                     </tbody>
             </table>
                 <?php } ?>
+                <br>
+                <a href="https://wa.me/+5513974094888" target="_blank" id="whatsapp">CONTINUE SEU ATENDIMENTO AQUI</a>
         </main>
 
         <footer>
