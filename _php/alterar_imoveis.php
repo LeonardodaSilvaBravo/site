@@ -71,7 +71,7 @@
                     <label>Tipo de Imóvel</label> <br>
                     <input type="radio" name="tipo" value="Casa" id="tipo">Casa<br>
                     <input type="radio" name="tipo" value="Terreno" id="tipo">Terreno<br>
-                    <input type="radio" name="tipo" value="Casa" id="tipo">Apartamento<br>
+                    <input type="radio" name="tipo" value="Apartamento" id="tipo">Apartamento<br>
                 </p>
                 <p>
                     <label>Descrição Nova</label>
