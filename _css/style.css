@@ -19,6 +19,11 @@
 }
 
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 50vh;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px;
@@ -202,7 +207,7 @@ span{
 .fechar a:hover {
     color: var(--cor3);
 }
-.banner{
+/* .banner{
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -211,7 +216,7 @@ span{
 .cycle-slideshow img{
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 a#whatsapp {
     color: var(--cor4);
@@ -225,4 +230,22 @@ a#whatsapp {
 a#whatsapp:hover {
     color: var(--cor3);
     background-color: var(--cor2);
+}
+
+.carrosel{
+    overflow: hidden;
+    box-shadow: 2px 2px 4px var(--cor3);
+    height: 500px;
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.container img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
 }
