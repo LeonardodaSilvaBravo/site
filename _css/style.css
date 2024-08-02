@@ -205,12 +205,15 @@ span{
     color: var(--cor3);
 }
 .banner{
-    padding-left: 5%;
-    padding-right: 5%;
+    position: relative;
+    padding-left: 25vmax;
     text-align: center;
     margin: 0 auto;
 }
 .cycle-slideshow img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
     text-align: center;
     margin: 0 auto;
 }
