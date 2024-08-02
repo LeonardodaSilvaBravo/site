@@ -119,6 +119,7 @@ nav#menu li:hover {
     font-size: 24px;
     
 }
+
 #social-links a{
     padding: 10px;
     text-decoration: none;
@@ -204,12 +205,14 @@ span{
 .fechar a:hover {
     color: var(--cor3);
 }
+
 .banner{
     position: relative;
     padding-left: 25vmax;
     text-align: center;
     margin: 0 auto;
 }
+
 .cycle-slideshow img{
     height: 500px;
     width: 500px;
