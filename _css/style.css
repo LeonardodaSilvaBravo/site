@@ -204,7 +204,7 @@ span{
 .fechar a:hover {
     color: var(--cor3);
 }
-/* .banner{
+.banner{
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -213,7 +213,7 @@ span{
 .cycle-slideshow img{
     text-align: center;
     margin: 0 auto;
-} */
+}
 
 a#whatsapp {
     color: var(--cor4);
@@ -227,30 +227,4 @@ a#whatsapp {
 a#whatsapp:hover {
     color: var(--cor3);
     background-color: var(--cor2);
-}
-
-.carrosel{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    overflow: hidden;
-    box-shadow: 2px 2px 4px var(--cor3);
-    height: 500px;
-    width: 500px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-.container img{
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
 }
