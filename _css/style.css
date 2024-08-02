@@ -19,11 +19,8 @@
 }
 
 body{
-    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    min-width: 50vh;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px;
@@ -233,6 +230,11 @@ a#whatsapp:hover {
 }
 
 .carrosel{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
     overflow: hidden;
     box-shadow: 2px 2px 4px var(--cor3);
     height: 500px;
@@ -241,10 +243,13 @@ a#whatsapp:hover {
 
 .container{
     display: flex;
+    justify-content: center;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
 }
 .container img{
+    display: flex;
+    justify-content: center;
     object-fit: cover;
     height: 500px;
     width: 500px;
