@@ -76,7 +76,7 @@ if(isset($_POST['ref'])){
                         <td><p><?php echo $sql_imoveis ['bairro']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['area_terreno']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['area_construida']; ?></p></td>
-                        <td><p><span>R$</span><?php echo $sql_imoveis ['preco']; ?></p></td>
+                        <td><p><span>R$</span><?php echo number_format($sql_imoveis ['preco'],2,',','.');  ?></p></td>
                         <td><p><?php echo $sql_imoveis ['piscina']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['venda_loc']; ?></p></td>
                         <td><p><?php echo $sql_imoveis ['numero_quartos']; ?></p></td>
