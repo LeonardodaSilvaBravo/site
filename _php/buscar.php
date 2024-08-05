@@ -18,7 +18,6 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="all.php?page=1">Ver Todos</a></li>
-                        <li><a href="painel.php">Voltar</a></li>
                         <li><a href="contact.php">Contato</a></li>
                     </ul>
                 </nav>

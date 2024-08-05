@@ -17,7 +17,6 @@
                     <h1>Menu</h1>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="login.php">Login</a></li>
                         <li><a href="all.php?page=1">Buscar Imóveis</a></li>
                         <li><a href="../_html/about_us.html">Quem Somos</a></li>
                     </ul>
