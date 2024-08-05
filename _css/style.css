@@ -234,3 +234,12 @@ a#whatsapp:hover {
     color: var(--cor3);
     background-color: var(--cor2);
 }
+
+.simulaLogo {
+    display: inline-flex;
+    height: 280px;
+    width: 280px;
+    object-fit: contain;
+    padding-left: 5px;
+    padding-right: 5px;
+}
