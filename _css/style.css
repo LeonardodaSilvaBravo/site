@@ -208,14 +208,14 @@ span{
 
 .banner{
     position: relative;
-    padding-left: 25vmax;
+    padding-left: 15vmax;
     text-align: center;
     margin: 0 auto;
 }
 
 .cycle-slideshow img{
     height: 500px;
-    width: 500px;
+    width: 700px;
     object-fit: cover;
     text-align: center;
     margin: 0 auto;
@@ -242,4 +242,22 @@ a#whatsapp:hover {
     object-fit: contain;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+#whatts{
+    display: block;
+    position: absolute;
+    bottom: -70%;
+    right: 5%;
+}
+
+#whats{
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width: 1180px){
+    #menu{
+        display: none;
+    }
 }
