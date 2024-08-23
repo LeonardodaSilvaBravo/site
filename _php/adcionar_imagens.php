@@ -5,28 +5,104 @@ if( isset($_POST['ref'])){
         echo "Preencha a referência";
     } else {
         $ref = $mysqli->real_escape_string($_POST['ref']);
+        $foto1 = $_FILES['foto1'];
+        $foto2 = $_FILES['foto2'];
+        $foto3 = $_FILES['foto3'];
+        $foto4 = $_FILES['foto4'];
+        $foto5 = $_FILES['foto5'];
+        $foto6 = $_FILES['foto6'];
+        $foto7 = $_FILES['foto7'];
+        $foto8 = $_FILES['foto8'];
+        $foto9 = $_FILES['foto9'];
+        $foto10 = $_FILES['foto10'];
         $foto11 = $_FILES['foto11'];
         $foto12 = $_FILES['foto12'];
         $foto13 = $_FILES['foto13'];
         $foto14 = $_FILES['foto14'];
         $foto15 = $_FILES['foto15'];
-        $foto16 = $_FILES['foto16'];
-        $foto17 = $_FILES['foto17'];
-        $foto18 = $_FILES['foto18'];
-        $foto19 = $_FILES['foto19'];
-        $foto20 = $_FILES['foto20'];
-        $foto21 = $_FILES['foto21'];
-        $foto22 = $_FILES['foto22'];
-        $foto23 = $_FILES['foto23'];
-        $foto24 = $_FILES['foto24'];
-        $foto25 = $_FILES['foto25'];
-        $foto26 = $_FILES['foto26'];
-        $foto27 = $_FILES['foto27'];
-        $foto28 = $_FILES['foto28'];
-        $foto29 = $_FILES['foto29'];
-        $foto30 = $_FILES['foto30'];
+        
 
         $pasta = "_imoveis/";
+
+        $foto1Nome = $foto1['name'];
+        $novonome1 = uniqid();
+
+        $extensao1 = strtolower(PATHINFO($foto1Nome, PATHINFO_EXTENSION));
+        $path1 = $pasta . $novonome1 . "." . $extensao1;
+
+        $enviar1 = move_uploaded_file($foto1['tmp_name'], $path1);
+
+        $foto2Nome = $foto2['name'];
+        $novonome2 = uniqid();
+
+        $extensao2 = strtolower(PATHINFO($foto2Nome, PATHINFO_EXTENSION));
+        $path2 = $pasta . $novonome2 . "." . $extensao2;
+
+        $enviar2 = move_uploaded_file($foto2['tmp_name'], $path2);
+
+        $foto3Nome = $foto3['name'];
+        $novonome3 = uniqid();
+
+        $extensao3 = strtolower(PATHINFO($foto3Nome, PATHINFO_EXTENSION));
+        $path3 = $pasta . $novonome3 . "." . $extensao3;
+
+        $enviar3 = move_uploaded_file($foto3['tmp_name'], $path3);
+
+        $foto4Nome = $foto4['name'];
+        $novonome4 = uniqid();
+
+        $extensao4 = strtolower(PATHINFO($foto4Nome, PATHINFO_EXTENSION));
+        $path4 = $pasta . $novonome4 . "." . $extensao4;
+
+        $enviar4 = move_uploaded_file($foto4['tmp_name'], $path4);
+
+        $foto5Nome = $foto5['name'];
+        $novonome5 = uniqid();
+
+        $extensao5 = strtolower(PATHINFO($foto5Nome, PATHINFO_EXTENSION));
+        $path5 = $pasta . $novonome5 . "." . $extensao5;
+
+        $enviar5 = move_uploaded_file($foto5['tmp_name'], $path5);
+
+        $foto6Nome = $foto6['name'];
+        $novonome6 = uniqid();
+
+        $extensao6 = strtolower(PATHINFO($foto6Nome, PATHINFO_EXTENSION));
+        $path6 = $pasta . $novonome6 . "." . $extensao6;
+
+        $enviar6 = move_uploaded_file($foto6['tmp_name'], $path6);
+
+        $foto7Nome = $foto7['name'];
+        $novonome7 = uniqid();
+
+        $extensao7 = strtolower(PATHINFO($foto7Nome, PATHINFO_EXTENSION));
+        $path7 = $pasta . $novonome7 . "." . $extensao7;
+
+        $enviar7 = move_uploaded_file($foto7['tmp_name'], $path7);
+
+        $foto8Nome = $foto8['name'];
+        $novonome8 = uniqid();
+
+        $extensao8 = strtolower(PATHINFO($foto8Nome, PATHINFO_EXTENSION));
+        $path8 = $pasta . $novonome8 . "." . $extensao8;
+
+        $enviar8 = move_uploaded_file($foto8['tmp_name'], $path8);
+
+        $foto9Nome = $foto9['name'];
+        $novonome9 = uniqid();
+
+        $extensao9 = strtolower(PATHINFO($foto9Nome, PATHINFO_EXTENSION));
+        $path9 = $pasta . $novonome9 . "." . $extensao9;
+
+        $enviar9 = move_uploaded_file($foto9['tmp_name'], $path9);
+
+        $foto10Nome = $foto10['name'];
+        $novonome10 = uniqid();
+
+        $extensao10 = strtolower(PATHINFO($foto10Nome, PATHINFO_EXTENSION));
+        $path10 = $pasta . $novonome10 . "." . $extensao10;
+
+        $enviar10 = move_uploaded_file($foto10['tmp_name'], $path10);
 
         $foto11Nome = $foto11['name'];
         $novonome11 = uniqid();
@@ -68,133 +144,13 @@ if( isset($_POST['ref'])){
 
         $enviar15 = move_uploaded_file($foto15['tmp_name'], $path15);
 
-        $foto16Nome = $foto16['name'];
-        $novonome16 = uniqid();
-
-        $extensao16 = strtolower(PATHINFO($foto16Nome, PATHINFO_EXTENSION));
-        $path16 = $pasta . $novonome16 . "." . $extensao16;
-
-        $enviar16 = move_uploaded_file($foto16['tmp_name'], $path16);
-
-        $foto17Nome = $foto17['name'];
-        $novonome17 = uniqid();
-
-        $extensao17 = strtolower(PATHINFO($foto17Nome, PATHINFO_EXTENSION));
-        $path17 = $pasta . $novonome17 . "." . $extensao17;
-
-        $enviar17 = move_uploaded_file($foto17['tmp_name'], $path17);
-
-        $foto18Nome = $foto18['name'];
-        $novonome18 = uniqid();
-
-        $extensao18 = strtolower(PATHINFO($foto18Nome, PATHINFO_EXTENSION));
-        $path18 = $pasta . $novonome18 . "." . $extensao18;
-
-        $enviar18 = move_uploaded_file($foto18['tmp_name'], $path18);
-
-        $foto19Nome = $foto19['name'];
-        $novonome19 = uniqid();
-
-        $extensao19 = strtolower(PATHINFO($foto19Nome, PATHINFO_EXTENSION));
-        $path19 = $pasta . $novonome19 . "." . $extensao19;
-
-        $enviar19 = move_uploaded_file($foto19['tmp_name'], $path19);
-
-        $foto20Nome = $foto20['name'];
-        $novonome20 = uniqid();
-
-        $extensao20 = strtolower(PATHINFO($foto20Nome, PATHINFO_EXTENSION));
-        $path20 = $pasta . $novonome20 . "." . $extensao20;
-
-        $enviar20 = move_uploaded_file($foto20['tmp_name'], $path20);
-
-        $foto21Nome = $foto21['name'];
-        $novonome21 = uniqid();
-
-        $extensao21 = strtolower(PATHINFO($foto21Nome, PATHINFO_EXTENSION));
-        $path21 = $pasta . $novonome21 . "." . $extensao21;
-
-        $enviar21 = move_uploaded_file($foto21['tmp_name'], $path21);
-
-        $foto22Nome = $foto22['name'];
-        $novonome22 = uniqid();
-
-        $extensao22 = strtolower(PATHINFO($foto22Nome, PATHINFO_EXTENSION));
-        $path22 = $pasta . $novonome22 . "." . $extensao22;
-
-        $enviar22 = move_uploaded_file($foto22['tmp_name'], $path22);
-
-        $foto23Nome = $foto23['name'];
-        $novonome23 = uniqid();
-
-        $extensao23 = strtolower(PATHINFO($foto23Nome, PATHINFO_EXTENSION));
-        $path23 = $pasta . $novonome23 . "." . $extensao23;
-
-        $enviar23 = move_uploaded_file($foto23['tmp_name'], $path23);
-
-        $foto24Nome = $foto24['name'];
-        $novonome24 = uniqid();
-
-        $extensao24 = strtolower(PATHINFO($foto24Nome, PATHINFO_EXTENSION));
-        $path24 = $pasta . $novonome24 . "." . $extensao24;
-
-        $enviar24 = move_uploaded_file($foto24['tmp_name'], $path24);
-
-        $foto25Nome = $foto25['name'];
-        $novonome25 = uniqid();
-
-        $extensao25 = strtolower(PATHINFO($foto25Nome, PATHINFO_EXTENSION));
-        $path25 = $pasta . $novonome25 . "." . $extensao25;
-
-        $enviar25 = move_uploaded_file($foto25['tmp_name'], $path25);
-
-        $foto26Nome = $foto26['name'];
-        $novonome26 = uniqid();
-
-        $extensao26 = strtolower(PATHINFO($foto26Nome, PATHINFO_EXTENSION));
-        $path26 = $pasta . $novonome26 . "." . $extensao26;
-
-        $enviar26 = move_uploaded_file($foto26['tmp_name'], $path26);
-
-        $foto27Nome = $foto27['name'];
-        $novonome27 = uniqid();
-
-        $extensao27 = strtolower(PATHINFO($foto27Nome, PATHINFO_EXTENSION));
-        $path27 = $pasta . $novonome27 . "." . $extensao27;
-
-        $enviar27 = move_uploaded_file($foto27['tmp_name'], $path27);
-
-        $foto28Nome = $foto28['name'];
-        $novonome28 = uniqid();
-
-        $extensao28 = strtolower(PATHINFO($foto28Nome, PATHINFO_EXTENSION));
-        $path28 = $pasta . $novonome28 . "." . $extensao28;
-
-        $enviar28 = move_uploaded_file($foto28['tmp_name'], $path28);
-
-        $foto29Nome = $foto29['name'];
-        $novonome29 = uniqid();
-
-        $extensao29 = strtolower(PATHINFO($foto29Nome, PATHINFO_EXTENSION));
-        $path29 = $pasta . $novonome29 . "." . $extensao29;
-
-        $enviar29 = move_uploaded_file($foto29['tmp_name'], $path29);
-
-        $foto30Nome = $foto30['name'];
-        $novonome30 = uniqid();
-
-        $extensao30 = strtolower(PATHINFO($foto30Nome, PATHINFO_EXTENSION));
-        $path30 = $pasta . $novonome30 . "." . $extensao30;
-
-        $enviar30 = move_uploaded_file($foto30['tmp_name'], $path30);
-
         $sql_code = "SELECT * FROM imoveis WHERE referencia= '$ref'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
         $usuario = $sql_query->fetch_assoc();
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) { $mysqli-> query("UPDATE imoveis SET foto11 = '$novonome11', nome_foto11 = '$path11', foto12 = '$novonome12', nome_foto12 = '$path12', foto13 = '$novonome13', nome_foto13 = '$path13', foto14 = '$novonome14', nome_foto14 = '$path14', foto15 = '$novonome15', nome_foto15 = '$path15', foto16 = '$novonome16', nome_foto16 = '$path16', foto17 = '$novonome17', nome_foto17 = '$path17', foto18 = '$novonome18', nome_foto18 = '$path18', foto19 = '$novonome19', nome_foto19 = '$path19', foto20 = '$novonome20', nome_foto20 = '$path20', foto21 = '$novonome21', nome_foto21 = '$path21', foto22 = '$novonome22', nome_foto22 = '$path22', foto23 = '$novonome23', nome_foto23 = '$path23', foto24 = '$novonome24', nome_foto24 = '$path24', foto25 = '$novonome25', nome_foto25 = '$path25', foto26 = '$novonome26', nome_foto26 = '$path26', foto27 = '$novonome27', nome_foto27 = '$path27', foto28 = '$novonome28', nome_foto28 = '$path28', foto29 = '$novonome29', nome_foto29 = '$path29', foto30 = '$novonome30', nome_foto30 = '$path30' WHERE imoveis.referencia = '$ref';");
+        if($quantidade == 1) { $mysqli-> query("UPDATE imoveis SET foto1 = '$novonome1', nome_foto1 = '$path1', foto2 = '$novonome2', nome_foto2 = '$path2', foto3 = '$novonome3', nome_foto3 = '$path3', foto4 = '$novonome4', nome_foto4 = '$path4', foto5 = '$novonome5', nome_foto5 = '$path5', foto6 = '$novonome6', nome_foto6 = '$path6', foto7 = '$novonome7', nome_foto7 = '$path7', foto8 = '$novonome8', nome_foto8 = '$path8', foto9 = '$novonome9', nome_foto9 = '$path9', foto10 = '$novonome10', nome_foto10 = '$path10', foto11 = '$novonome11', nome_foto11 = '$path11', foto12 = '$novonome12', nome_foto12 = '$path12', foto13 = '$novonome13', nome_foto13 = '$path13', foto14 = '$novonome14', nome_foto14 = '$path14', foto15 = '$novonome15', nome_foto15 = '$path15' WHERE imoveis.referencia = '$ref';");
         echo("Cadastro efetuado com sucesso");
         header("Location: painel_admin.php");
     } else {

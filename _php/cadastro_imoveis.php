@@ -84,47 +84,6 @@
                     <input type="radio" name="piscina" value="Não" id="nao">Não <br>
                 </p>
                 <p>
-                    <label>Foto 1</label>
-                    <input type="file" name="foto1">
-                </p>
-                
-                <p>
-                    <label>Foto 2</label>
-                    <input type="file" name="foto2">
-                </p>
-                <p>
-                    <label>Foto 3</label>
-                    <input type="file" name="foto3">
-                </p>
-                <p>
-                    <label>Foto 4</label>
-                    <input type="file" name="foto4">
-                </p>
-                <p>
-                    <label>Foto 5</label>
-                    <input type="file" name="foto5">
-                </p>
-                <p>
-                    <label>Foto 6</label>
-                    <input type="file" name="foto6">
-                </p>
-                <p>
-                    <label>Foto 7</label>
-                    <input type="file" name="foto7">
-                </p>
-                <p>
-                    <label>Foto 8</label>
-                    <input type="file" name="foto8">
-                </p>
-                <p>
-                    <label>Foto 9</label>
-                    <input type="file" name="foto9">
-                </p>
-                <p>
-                    <label>Foto 10</label>
-                    <input type="file" name="foto10">
-                </p>
-                <p>
                     <button type="submit">Cadastrar</button>
                 </p>
             </form>

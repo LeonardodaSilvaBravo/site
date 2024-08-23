@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../_css/style.css"/>
@@ -26,70 +26,73 @@
         </header>
 
         <main>
-            <form enctype="multipart/form-data" action="alteracao_imoveis.php" method="POST">
+            <form enctype="multipart/form-data" action="mais_imagens.php" method="POST">
                 <p>
-                    <label>Referência Atual</label>
-                    <input type="text" name="ref_atual">
+                    <label>Referência</label>
+                    <input type="text" name="ref">
                 </p>
                 <p>
-                    <label>Endereço Novo</label>
-                    <input type="text" name="endereco">
+                    <label>Foto 16</label>
+                    <input type="file" name="foto16">
                 </p>
                 <p>
-                    <label>Referência Nova</label>
-                    <input type="text" name="ref_nova">
+                    <label>Foto 17</label>
+                    <input type="file" name="foto17">
                 </p>
                 <p>
-                    <label>Área do Terreno Novo</label>
-                    <input type="text" name="areaTer">
+                    <label>foto 18</label>
+                    <input type="file" name="foto18">
                 </p>
                 <p>
-                    <label>Área Construída Novo</label>
-                    <input type="text" name="AC">
+                    <label>Foto 19</label>
+                    <input type="file" name="foto19">
                 </p>
                 <p>
-                    <label>Número de Quartos Novo</label>
-                    <input type="text" name="quartos">
+                    <label>Foto 20</label>
+                    <input type="file" name="foto20">
                 </p>
                 <p>
-                    <label>Número de Suítes Novo</label>
-                    <input type="text" name="suites">
+                    <label>Foto 21</label>
+                    <input type="file" name="foto21">
                 </p>
                 <p>
-                    <label>Número de Banheiros Novo</label>
-                    <input type="text" name="banheiros">
+                    <label>Foto 22</label>
+                    <input type="file" name="foto22">
                 </p>
                 <p>
-                    <label>Bairro Novo</label>
-                    <input type="text" name="bairo">
+                    <label>Foto 23</label>
+                    <input type="file" name="foto23">
                 </p>
                 <p>
-                    <label>Preço Novo</label>
-                    <input type="text" name="preco">
+                    <label>Foto 24</label>
+                    <input type="file" name="foto24">
                 </p>
                 <p>
-                    <label>Tipo de Imóvel</label> <br>
-                    <input type="radio" name="tipo" value="Casa" id="tipo">Casa<br>
-                    <input type="radio" name="tipo" value="Terreno" id="tipo">Terreno<br>
-                    <input type="radio" name="tipo" value="Apartamento" id="tipo">Apartamento<br>
+                    <label>Foto 25</label>
+                    <input type="file" name="foto25">
                 </p>
                 <p>
-                    <label>Descrição Nova</label>
-                    <input type="text" name="desc">
+                    <label>Foto 26</label>
+                    <input type="file" name="foto26">
                 </p>
                 <p>
-                    <label>Venda ou Locação Novo</label> <br>
-                    <input type="radio" name="venda_ou_loc" value="Venda" id="venda">Venda <br>
-                    <input type="radio" name="venda_ou_loc" value="Locaçao" id="venda">Locação <br>
+                    <label>Foto 27</label>
+                    <input type="file" name="foto27">
                 </p>
                 <p>
-                    <label>Tem Piscina Agora</label> <br>
-                    <input type="radio" name="piscina" value="Sim" id="sim">Sim <br>
-                    <input type="radio" name="piscina" value="Não" id="nao">Não <br>
+                    <label>Foto 28</label>
+                    <input type="file" name="foto28">
                 </p>
-                
                 <p>
-                    <button type="submit">Alterar</button>
+                    <label>Foto 29</label>
+                    <input type="file" name="foto29">
+                </p>
+                <p>
+                    <label>Foto 30</label>
+                    <input type="file" name="foto30">
+                </p>
+                <p>
+                    <button type="submit">Cadastrar</button>
                 </p>
             </form>
         </main>

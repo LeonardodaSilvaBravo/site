@@ -23,7 +23,8 @@
                         <li><a href="excluir_admin.php">Excluir Admin</a></li>
                         <li><a href="cadastro_imoveis.php">Cadastrar Imóveis</a></li>
                         <li><a href="excluir_imovel.php">Excluir Imóveis</a></li>
-                        <li><a href="escolher_imagens.php">Mais Imagens aos Imóveis</a></li>
+                        <li><a href="escolher_imagens.php">Escolher Imagens dos Imóveis</a></li>
+                        <li><a href="mais.php">Mais Imagens aos Imóveis</a></li>
                         <li><a href="cadastro_admin.php">Cadastrar Admin</a></li>
                     </ul>
                 </nav>

@@ -32,6 +32,47 @@
                     <input type="text" name="ref">
                 </p>
                 <p>
+                    <label>Foto 1</label>
+                    <input type="file" name="foto1">
+                </p>
+                
+                <p>
+                    <label>Foto 2</label>
+                    <input type="file" name="foto2">
+                </p>
+                <p>
+                    <label>Foto 3</label>
+                    <input type="file" name="foto3">
+                </p>
+                <p>
+                    <label>Foto 4</label>
+                    <input type="file" name="foto4">
+                </p>
+                <p>
+                    <label>Foto 5</label>
+                    <input type="file" name="foto5">
+                </p>
+                <p>
+                    <label>Foto 6</label>
+                    <input type="file" name="foto6">
+                </p>
+                <p>
+                    <label>Foto 7</label>
+                    <input type="file" name="foto7">
+                </p>
+                <p>
+                    <label>Foto 8</label>
+                    <input type="file" name="foto8">
+                </p>
+                <p>
+                    <label>Foto 9</label>
+                    <input type="file" name="foto9">
+                </p>
+                <p>
+                    <label>Foto 10</label>
+                    <input type="file" name="foto10">
+                </p>
+                <p>
                     <label>Foto 11</label>
                     <input type="file" name="foto11">
                 </p>
@@ -50,66 +91,6 @@
                 <p>
                     <label>Foto 15</label>
                     <input type="file" name="foto15">
-                </p>
-                <p>
-                    <label>Foto 16</label>
-                    <input type="file" name="foto16">
-                </p>
-                <p>
-                    <label>Foto 17</label>
-                    <input type="file" name="foto17">
-                </p>
-                <p>
-                    <label>foto 18</label>
-                    <input type="file" name="foto18">
-                </p>
-                <p>
-                    <label>Foto 19</label>
-                    <input type="file" name="foto19">
-                </p>
-                <p>
-                    <label>Foto 20</label>
-                    <input type="file" name="foto20">
-                </p>
-                <p>
-                    <label>Foto 21</label>
-                    <input type="file" name="foto21">
-                </p>
-                <p>
-                    <label>Foto 22</label>
-                    <input type="file" name="foto22">
-                </p>
-                <p>
-                    <label>Foto 23</label>
-                    <input type="file" name="foto23">
-                </p>
-                <p>
-                    <label>Foto 24</label>
-                    <input type="file" name="foto24">
-                </p>
-                <p>
-                    <label>Foto 25</label>
-                    <input type="file" name="foto25">
-                </p>
-                <p>
-                    <label>Foto 26</label>
-                    <input type="file" name="foto26">
-                </p>
-                <p>
-                    <label>Foto 27</label>
-                    <input type="file" name="foto27">
-                </p>
-                <p>
-                    <label>Foto 28</label>
-                    <input type="file" name="foto28">
-                </p>
-                <p>
-                    <label>Foto 29</label>
-                    <input type="file" name="foto29">
-                </p>
-                <p>
-                    <label>Foto 30</label>
-                    <input type="file" name="foto30">
                 </p>
                 <p>
                     <button type="submit">Cadastrar</button>
